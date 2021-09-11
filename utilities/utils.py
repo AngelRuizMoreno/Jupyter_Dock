@@ -11,10 +11,7 @@ from simtk.openmm.app import PDBFile
 import MDAnalysis as mda
 from MDAnalysis.coordinates import PDB
 
-def getbox(protein='',prot_opts={'format':'','object':'prot'},ligand='',lig_opts={'format':'mol2','object':'lig'}, selection='sele', extending = 6.0, software='vina'):
-    
-    cmd.load(filename=protein,**prot_opts)
-    cmd.load(filename=ligand,**lig_opts)
+def getbox(selection='sele', extending = 6.0, software='vina'):
     
     ([minX, minY, minZ],[maxX, maxY, maxZ]) = cmd.get_extent(selection)
 
@@ -45,7 +42,7 @@ def getbox(protein='',prot_opts={'format':'','object':'prot'},ligand='',lig_opts
         print('software options must be "vina", "ledock" or "both"')
 
 
-def fix_protein(filename='',AddHs_pH=7.4,output='',try_renumeberResidues=False):
+def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
 
     fix = PDBFixer(filename=filename)
     fix.findMissingResidues()
@@ -54,20 +51,23 @@ def fix_protein(filename='',AddHs_pH=7.4,output='',try_renumeberResidues=False):
     fix.removeHeterogens(True)
     fix.findMissingAtoms()
     fix.addMissingAtoms()
-    fix.addMissingHydrogens(AddHs_pH)
+    fix.addMissingHydrogens(addHs_pH)
     PDBFile.writeFile(fix.topology, fix.positions, open(output, 'w'))
 
-    if try_renumeberResidues == True:
-        original=mda.Universe(output)
-        from_fix=mda.Universe(output)
+    if try_renumberResidues == True:
+        try:
+            original=mda.Universe(output)
+            from_fix=mda.Universe(output)
 
-        resNum=[res.resid for res in original.residues]
-        for idx,res in enumerate(from_fix.residues):
-            res.resid = resNum[idx]
+            resNum=[res.resid for res in original.residues]
+            for idx,res in enumerate(from_fix.residues):
+                res.resid = resNum[idx]
 
-        save=PDB.PDBWriter(filename=output)
-        save.write(from_fix)
-        save.close()
+            save=PDB.PDBWriter(filename=output)
+            save.write(from_fix)
+            save.close()
+        except Exception:
+            print('SNot possible to renumber residues, check excepton for extra details')
         
 
 def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_poses=10, l_list='ligand.list',out='dock.in'):
@@ -122,9 +122,9 @@ def DOKMolSupplier (file=None):
             pass
     return(mols)
 
-def dok_to_sdf (dok_file=None,out_file=None):
+def dok_to_sdf (dok_file=None,output=None):
     mols=DOKMolSupplier(dok_file)
-    out=pybel.Outputfile(filename=out_file,format='sdf',overwrite=True)
+    out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
     for pose in mols:
         pose.addh()
         out.write(pose)
