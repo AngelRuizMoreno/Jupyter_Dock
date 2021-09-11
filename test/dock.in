@@ -1,0 +1,18 @@
+Receptor
+test/1AZ8_clean_H.pdb
+
+RMSD
+1.0
+
+Binding pocket
+19.57430076599121 44.143798828125
+4.285799980163574 22.409099578857422
+8.378700256347656 25.75309944152832
+
+Number of binding poses
+5
+
+Ligands list
+test/ledock_ligand.list
+
+END
