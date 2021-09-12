@@ -11,6 +11,8 @@ from simtk.openmm.app import PDBFile
 import MDAnalysis as mda
 from MDAnalysis.coordinates import PDB
 
+import random
+
 def getbox(selection='sele', extending = 6.0, software='vina'):
     
     ([minX, minY, minZ],[maxX, maxY, maxZ]) = cmd.get_extent(selection)
@@ -131,7 +133,7 @@ def dok_to_sdf (dok_file=None,output=None):
     out.close()
 
 
-def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',refMol='',refMol_opts={'format':'mol2'},pose=None):
+def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',refMol='',refMol_opts={'format':'mol2'},pose=[0]):
 
     view = py3Dmol.view()
     view.removeAllModels()
@@ -145,17 +147,19 @@ def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',r
     if refMol:
         view.addModel(open(refMol,'r').read(),**refMol_opts)
         ref_m = view.getModel()
-        ref_m.setStyle({},{'stick':{'colorscheme':'purpleCarbon','radius':0.2}})
+        ref_m.setStyle({},{'stick':{'colorscheme':'greenCarbon','radius':0.2}})
 
     if pose:
         results=Chem.SDMolSupplier(docking_results)
-        for index in pose:    
+        for index in pose:
+
+            color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])]    
             p=Chem.MolToMolBlock(results[index])
-            print (results[index].GetProp('REMARK'))
+            #print (results[index].GetProp('REMARK'))
 
             view.addModel(p,'mol')
             x = view.getModel()
-            x.setStyle({},{'stick':{'colorscheme':'cyanCarbon','radius':0.1}})
+            x.setStyle({},{'stick':{'color':color[0],'radius':0.1}})
 
     view.zoomTo()
     view.show()

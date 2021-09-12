@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    18:
+HEADER 0  - Pocket Score                      : -0.1024
+HEADER 1  - Drug Score                        : 0.0008
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.8732
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4447
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 21.8750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.1250
+HEADER 9  - Pocket volume (Monte Carlo)       : 340.0364
+HEADER 10  -Pocket volume (convex hull)       : 12.7282
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 6.0000
+HEADER 13 - Number of apolar alpha sphere     :     7
+HEADER 14 - Proportion of apolar alpha sphere : 0.4375
+ATOM    380  OD2 ASP A  25      24.749  43.725   6.232  0.43  8.57           O 0
+ATOM    406    O SER A  27      31.001  42.340   5.908  0.00  0.00           O 0
+ATOM    410   OG SER A  27      28.227  40.655   4.804  0.00  0.00           O 0
+ATOM    326   CD LYS A  22      25.687  48.355   5.568  0.00  0.00           C 0
+ATOM    426  CE1 PHE A  28      29.155  47.482  10.745  0.00  0.00           C 0
+ATOM    505  CD2 LEU A  33      30.239  53.087   9.389  0.00  0.00           C 0
+ATOM    501  CD1 LEU A  33      30.815  51.433  11.068  0.00  0.00           C 0
+ATOM    437    O SER A  29      32.070  48.126   8.083  0.57  9.64           O 0
+ATOM    422  CD1 PHE A  28      28.926  46.230  10.133  0.00  0.00           C 0
+ATOM    432    N SER A  29      31.757  45.288   7.553  0.72  3.28           N 0
+ATOM    414   CA PHE A  28      30.098  43.686   8.135  0.00  0.00           C 0
+ATOM    320   CB LYS A  22      25.148  47.137   7.702  0.00  0.00           C 0
+ATOM    481   CB GLU A  32      33.244  52.785   4.918  0.00  0.00           C 0
+ATOM    329   CE LYS A  22      25.142  49.217   4.436  0.00  0.00           C 0
+ATOM    438   CB SER A  29      33.422  46.252   6.080  0.00  0.00           C 0
+ATOM    300    O LEU A  21      25.926  49.040  10.080  0.41  4.29           O 0
+TER
+END
