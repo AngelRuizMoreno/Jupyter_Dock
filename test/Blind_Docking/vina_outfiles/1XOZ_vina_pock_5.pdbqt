@@ -1,0 +1,96 @@
+MODEL 1
+REMARK VINA RESULT:    11.015      0.000      0.000
+REMARK INTER + INTRA:          11.183
+REMARK INTER:                  11.382
+REMARK INTRA:                  -0.199
+REMARK UNBOUND:                -0.476
+REMARK  Name = 1XOZ
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C13_13  and  C22_19
+REMARK    2  A    between atoms: N15_14  and  C18_17
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  CIA A   1      39.471  31.450  33.395  0.00  0.00    -0.013 C 
+ATOM      2  C2  CIA A   1      39.441  31.709  34.756  0.00  0.00    +0.055 C 
+ATOM      3  C3  CIA A   1      38.336  31.437  35.607  0.00  0.00    -0.021 C 
+ATOM      4  C4  CIA A   1      37.162  30.864  35.068  0.00  0.00    +0.024 C 
+ATOM      5  C5  CIA A   1      37.187  30.602  33.708  0.00  0.00    +0.071 C 
+ATOM      6  C6  CIA A   1      38.291  30.879  32.889  0.00  0.00    +0.002 C 
+ATOM      7  C7  CIA A   1      37.919  30.464  31.528  0.00  0.00    -0.013 C 
+ATOM      8  C8  CIA A   1      36.655  29.984  31.642  0.00  0.00    +0.071 C 
+ATOM      9  N9  CIA A   1      36.232  30.060  32.890  0.00  0.00    -0.249 NA
+ATOM     10  C10 CIA A   1      38.708  30.528  30.251  0.00  0.00    +0.069 C 
+ATOM     11  C11 CIA A   1      38.207  29.479  29.249  0.00  0.00    +0.167 C 
+ATOM     12  N12 CIA A   1      36.764  29.217  29.288  0.00  0.00    -0.276 N 
+ATOM     13  C13 CIA A   1      35.939  29.469  30.457  0.00  0.00    +0.156 C 
+ATOM     14  N15 CIA A   1      38.205  28.960  26.866  0.00  0.00    -0.294 N 
+ATOM     15  C16 CIA A   1      36.864  28.395  27.008  0.00  0.00    +0.203 C 
+ATOM     16  C17 CIA A   1      36.114  28.687  28.230  0.00  0.00    +0.234 C 
+ATOM     17  C18 CIA A   1      38.859  28.965  25.570  0.00  0.00    +0.132 C 
+ATOM     18  O20 CIA A   1      34.935  28.437  28.220  0.00  0.00    -0.274 OA
+ATOM     19  C31 CIA A   1      38.860  29.468  27.903  0.00  0.00    +0.237 C 
+ATOM     20  O32 CIA A   1      40.001  29.955  27.852  0.00  0.00    -0.274 OA
+ENDROOT
+BRANCH  13  21
+ATOM     21  C22 CIA A   1      34.796  30.517  30.218  0.00  0.00    -0.017 A 
+ATOM     22  C23 CIA A   1      33.660  30.544  31.010  0.00  0.00    +0.055 A 
+ATOM     23  C24 CIA A   1      32.679  31.502  30.746  0.00  0.00    +0.167 A 
+ATOM     24  C25 CIA A   1      32.809  32.402  29.735  0.00  0.00    +0.166 A 
+ATOM     25  C26 CIA A   1      33.916  32.418  28.917  0.00  0.00    +0.050 A 
+ATOM     26  C27 CIA A   1      34.890  31.477  29.173  0.00  0.00    +0.010 A 
+ATOM     27  O28 CIA A   1      31.500  31.668  31.428  0.00  0.00    -0.453 OA
+ATOM     28  C29 CIA A   1      31.072  32.960  30.907  0.00  0.00    +0.466 C 
+ATOM     29  O30 CIA A   1      31.727  33.231  29.673  0.00  0.00    -0.453 OA
+ENDBRANCH  13  21
+TORSDOF 1
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    13.694      2.226      5.675
+REMARK INTER + INTRA:          14.018
+REMARK INTER:                  13.841
+REMARK INTRA:                   0.178
+REMARK UNBOUND:                -0.476
+REMARK  Name = 1XOZ
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C13_13  and  C22_19
+REMARK    2  A    between atoms: N15_14  and  C18_17
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  CIA A   1      38.865  27.126  26.604  0.00  0.00    -0.013 C 
+ATOM      2  C2  CIA A   1      38.729  27.188  25.226  0.00  0.00    +0.055 C 
+ATOM      3  C3  CIA A   1      38.283  28.330  24.508  0.00  0.00    -0.021 C 
+ATOM      4  C4  CIA A   1      37.940  29.508  25.210  0.00  0.00    +0.024 C 
+ATOM      5  C5  CIA A   1      38.074  29.452  26.586  0.00  0.00    +0.071 C 
+ATOM      6  C6  CIA A   1      38.518  28.312  27.273  0.00  0.00    +0.002 C 
+ATOM      7  C7  CIA A   1      38.517  28.655  28.703  0.00  0.00    -0.013 C 
+ATOM      8  C8  CIA A   1      38.084  29.940  28.753  0.00  0.00    +0.071 C 
+ATOM      9  N9  CIA A   1      37.831  30.401  27.542  0.00  0.00    -0.249 NA
+ATOM     10  C10 CIA A   1      38.895  27.822  29.895  0.00  0.00    +0.069 C 
+ATOM     11  C11 CIA A   1      39.318  28.715  31.069  0.00  0.00    +0.167 C 
+ATOM     12  N12 CIA A   1      38.599  29.989  31.177  0.00  0.00    -0.276 N 
+ATOM     13  C13 CIA A   1      37.950  30.636  30.050  0.00  0.00    +0.156 C 
+ATOM     14  N15 CIA A   1      39.571  28.689  33.494  0.00  0.00    -0.294 N 
+ATOM     15  C16 CIA A   1      39.156  30.091  33.536  0.00  0.00    +0.203 C 
+ATOM     16  C17 CIA A   1      38.527  30.663  32.345  0.00  0.00    +0.234 C 
+ATOM     17  C18 CIA A   1      39.906  27.994  34.724  0.00  0.00    +0.132 C 
+ATOM     18  O20 CIA A   1      37.965  31.720  32.478  0.00  0.00    -0.274 OA
+ATOM     19  C31 CIA A   1      39.662  28.023  32.350  0.00  0.00    +0.237 C 
+ATOM     20  O32 CIA A   1      40.014  26.837  32.246  0.00  0.00    -0.274 OA
+ENDROOT
+BRANCH  13  21
+ATOM     21  C22 CIA A   1      36.402  30.820  30.224  0.00  0.00    -0.017 A 
+ATOM     22  C23 CIA A   1      35.669  31.641  29.383  0.00  0.00    +0.055 A 
+ATOM     23  C24 CIA A   1      34.294  31.761  29.591  0.00  0.00    +0.167 A 
+ATOM     24  C25 CIA A   1      33.660  31.099  30.595  0.00  0.00    +0.166 A 
+ATOM     25  C26 CIA A   1      34.339  30.273  31.460  0.00  0.00    +0.050 A 
+ATOM     26  C27 CIA A   1      35.696  30.146  31.260  0.00  0.00    +0.010 A 
+ATOM     27  O28 CIA A   1      33.425  32.528  28.855  0.00  0.00    -0.453 OA
+ATOM     28  C29 CIA A   1      32.147  32.018  29.340  0.00  0.00    +0.466 C 
+ATOM     29  O30 CIA A   1      32.324  31.376  30.599  0.00  0.00    -0.453 OA
+ENDBRANCH  13  21
+TORSDOF 1
+ENDMDL

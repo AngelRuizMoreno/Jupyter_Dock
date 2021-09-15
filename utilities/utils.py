@@ -72,12 +72,18 @@ def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
             print('SNot possible to renumber residues, check excepton for extra details')
         
 
-def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_poses=10, l_list='ligand.list',out='dock.in'):
+def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_poses=10, l_list=[],l_list_outfile='',out='dock.in'):
     rmsd=str(rmsd)
     x=[str(x) for x in x]
     y=[str(y) for y in y]
     z=[str(z) for z in z]
     n_poses=str(n_poses)
+
+    with open(l_list_outfile,'w') as l_out:
+        for element in l_list:
+            l_out.write(element)
+    l_out.close()
+
     file=[
         'Receptor\n',
         receptor + '\n\n',
@@ -90,7 +96,7 @@ def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_
         'Number of binding poses\n',
         n_poses + '\n\n',
         'Ligands list\n',
-        l_list + '\n\n',
+        l_list_outfile + '\n\n',
         'END']
     
     with open(out,'w') as output:
@@ -132,7 +138,7 @@ def dok_to_sdf (dok_file=None,output=None):
         out.write(pose)
     out.close()
 
-
+'''
 def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',refMol='',refMol_opts={'format':'mol2'},pose=[0]):
 
     view = py3Dmol.view()
@@ -163,3 +169,4 @@ def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',r
 
     view.zoomTo()
     view.show()
+'''
