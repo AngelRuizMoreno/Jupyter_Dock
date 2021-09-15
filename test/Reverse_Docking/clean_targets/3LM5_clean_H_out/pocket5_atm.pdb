@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 0.0635
+HEADER 1  - Drug Score                        : 0.0005
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.6607
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4337
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 12.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 106.2353
+HEADER 10  -Pocket volume (convex hull)       : 1.7934
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 5.0000
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.3333
+ATOM    967    C GLU A  76      36.736   6.875  -4.920  0.00  0.00           C 0
+ATOM    969   CB GLU A  76      36.245   8.285  -6.910  0.00  0.00           C 0
+ATOM   1046  OE1 GLU A  80      31.716   6.247  -2.392  0.62  3.21           O 0
+ATOM    968    O GLU A  76      36.372   7.361  -3.844  0.59  3.21           O 0
+ATOM   2660    O GLY A 181      31.727  11.103  -3.948  0.42  4.29           O 0
+ATOM   2656   CA GLY A 181      30.458   9.598  -2.622  0.00  0.00           C 0
+ATOM    852  NH1 ARG A  68      29.702   5.823  -8.524  0.62  6.56           N 0
+ATOM    976  OE1 GLU A  76      34.099  10.093  -7.986  0.44  9.64           O 0
+ATOM    851   CZ ARG A  68      30.361   4.683  -8.773  0.00  0.00           C 0
+ATOM    924   CB CYS A  73      35.007   5.571 -10.544  0.00  0.00           C 0
+ATOM    986  CG1 ILE A  77      34.484   3.375  -5.880  0.00  0.00           C 0
+ATOM    855  NH2 ARG A  68      30.539   3.783  -7.802  0.00  0.00           N 0
+ATOM    978    N ILE A  77      36.599   5.587  -5.235  0.00  0.00           N 0
+ATOM    923    O CYS A  73      36.577   4.993  -8.255  0.00  0.00           O 0
+TER
+END

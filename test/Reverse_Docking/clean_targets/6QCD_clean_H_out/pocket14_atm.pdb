@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    14:
+HEADER 0  - Pocket Score                      : -0.1335
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.8184
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5354
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 1.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.1667
+HEADER 9  - Pocket volume (Monte Carlo)       : 292.9883
+HEADER 10  -Pocket volume (convex hull)       : 13.6648
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 1.0000
+HEADER 13 - Number of apolar alpha sphere     :     2
+HEADER 14 - Proportion of apolar alpha sphere : 0.1053
+ATOM   2407  NH1 ARG A 164      -7.752  32.710  14.671  0.00  0.00           N 0
+ATOM   2245    O VAL A 153     -12.287  29.402  18.222  0.00  0.00           O 0
+ATOM   2274   CA GLY A 155     -14.460  32.440  16.214  0.00  0.00           C 0
+ATOM   2272    N GLY A 155     -13.557  31.459  15.595  0.58  4.37           N 0
+ATOM   2410  NH2 ARG A 164      -9.229  31.255  13.690  0.57  2.19           N 0
+ATOM   2196   CB ARG A 150      -7.983  25.553  15.847  0.00  0.00           C 0
+ATOM   2231    O THR A 152     -10.559  26.401  17.988  0.00  0.00           O 0
+ATOM   2199   CG ARG A 150      -7.597  26.150  14.503  0.00  0.00           C 0
+ATOM   2401   CD ARG A 164      -5.623  31.780  13.142  0.00  0.00           C 0
+ATOM   2207   CZ ARG A 150      -4.646  27.259  12.594  0.00  0.00           C 0
+ATOM   2208  NH1 ARG A 150      -3.560  26.747  13.150  0.00  0.00           N 0
+ATOM   2205   NE ARG A 150      -5.821  27.059  13.163  0.00  0.00           N 0
+ATOM   2202   CD ARG A 150      -6.068  26.248  14.345  0.00  0.00           C 0
+ATOM   2238  OG1 THR A 152      -8.803  28.467  19.999  0.00  0.00           O 0
+ATOM   2406   CZ ARG A 164      -7.992  31.738  13.811  0.00  0.00           C 0
+ATOM   2224  OD1 ASP A 151      -5.836  26.017  20.324  0.32  7.50           O 0
+ATOM   2404   NE ARG A 164      -6.997  31.270  13.076  0.00  0.00           N 0
+TER
+END

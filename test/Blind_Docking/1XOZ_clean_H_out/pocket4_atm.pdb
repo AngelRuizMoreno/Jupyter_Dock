@@ -12,36 +12,36 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 10.0909
 HEADER 7  - Polarity Score                    :     7
 HEADER 8  - Amino Acid based volume Score     : 4.4545
-HEADER 9  - Pocket volume (Monte Carlo)       : 384.3039
+HEADER 9  - Pocket volume (Monte Carlo)       : 390.7529
 HEADER 10  -Pocket volume (convex hull)       : 36.5788
 HEADER 11 - Charge Score                      :    -1
 HEADER 12 - Local hydrophobic density Score   : 11.7143
 HEADER 13 - Number of apolar alpha sphere     :    14
 HEADER 14 - Proportion of apolar alpha sphere : 0.4667
-ATOM   1771  OE2 GLU A 109      24.778  31.733  31.253  0.54  9.64           O 0
-ATOM   3563   NZ LYS A 220      22.916  29.603  29.504  0.00  0.00           N 0
-ATOM   3502   CB PRO A 217      26.111  25.521  35.355  0.00  0.00           C 0
-ATOM   3505   CG PRO A 217      25.001  24.821  35.802  0.00  0.00           C 0
-ATOM   2902   NZ LYS A 182      32.585  31.334  37.761  0.00  0.00           N 0
-ATOM   2982  OE1 GLN A 186      32.200  32.335  34.153  0.75  2.14           O 0
-ATOM   2979  NE2 GLN A 186      33.501  30.771  35.161  0.00  0.00           N 0
-ATOM   3580  OE1 GLU A 221      32.312  27.644  34.357  0.36  5.36           O 0
-ATOM   3632  CD1 LEU A 224      28.456  32.135  29.281  0.00  0.00           C 0
-ATOM   3573   CB GLU A 221      31.018  27.958  31.873  0.00  0.00           C 0
-ATOM   2896   CD LYS A 182      31.549  33.269  39.061  0.00  0.00           C 0
-ATOM   2893   CG LYS A 182      32.111  34.085  37.858  0.00  0.00           C 0
-ATOM   3501    O PRO A 217      28.176  26.086  32.850  0.68  3.21           O 0
-ATOM   3554   CG LYS A 220      25.820  28.817  30.035  0.00  0.00           C 0
-ATOM   3567    N GLU A 221      29.149  27.497  30.379  0.00  0.00           N 0
-ATOM   2914  CG1 ILE A 183      28.684  35.238  33.802  0.00  0.00           C 0
-ATOM   2839   CA THR A 179      27.361  37.172  38.576  0.00  0.00           C 0
-ATOM   2845  CG2 THR A 179      25.719  35.846  37.218  0.00  0.00           C 0
-ATOM   2849  OG1 THR A 179      25.435  36.093  39.523  0.72  9.64           O 0
-ATOM   3569   CA GLU A 221      30.412  28.250  30.500  0.00  0.00           C 0
-ATOM   3498   CA PRO A 217      26.191  25.197  33.832  0.00  0.00           C 0
-ATOM   3456    O LEU A 214      23.035  25.412  29.493  0.28  3.21           O 0
-ATOM   3475    O GLU A 215      22.047  23.537  32.936  0.25  8.57           O 0
-ATOM   2842    O THR A 179      28.761  37.056  36.578  0.00  0.00           O 0
-ATOM   3551   CB LYS A 220      26.038  27.308  30.080  0.00  0.00           C 0
+ATOM   1771  OE2 GLU A 642      24.778  31.733  31.253  0.54  9.64           O 0
+ATOM   3563   NZ LYS A 752      22.916  29.603  29.504  0.00  0.00           N 0
+ATOM   3502   CB PRO A 749      26.111  25.521  35.355  0.00  0.00           C 0
+ATOM   3505   CG PRO A 749      25.001  24.821  35.802  0.00  0.00           C 0
+ATOM   2902   NZ LYS A 714      32.585  31.334  37.761  0.00  0.00           N 0
+ATOM   2982  OE1 GLN A 718      32.200  32.335  34.153  0.75  2.14           O 0
+ATOM   2979  NE2 GLN A 718      33.501  30.771  35.161  0.00  0.00           N 0
+ATOM   3580  OE1 GLU A 753      32.312  27.644  34.357  0.36  5.36           O 0
+ATOM   3632  CD1 LEU A 756      28.456  32.135  29.281  0.00  0.00           C 0
+ATOM   3573   CB GLU A 753      31.018  27.958  31.873  0.00  0.00           C 0
+ATOM   2896   CD LYS A 714      31.549  33.269  39.061  0.00  0.00           C 0
+ATOM   2893   CG LYS A 714      32.111  34.085  37.858  0.00  0.00           C 0
+ATOM   3501    O PRO A 749      28.176  26.086  32.850  0.68  3.21           O 0
+ATOM   3554   CG LYS A 752      25.820  28.817  30.035  0.00  0.00           C 0
+ATOM   3567    N GLU A 753      29.149  27.497  30.379  0.00  0.00           N 0
+ATOM   2914  CG1 ILE A 715      28.684  35.238  33.802  0.00  0.00           C 0
+ATOM   2839   CA THR A 711      27.361  37.172  38.576  0.00  0.00           C 0
+ATOM   2845  CG2 THR A 711      25.719  35.846  37.218  0.00  0.00           C 0
+ATOM   2849  OG1 THR A 711      25.435  36.093  39.523  0.72  9.64           O 0
+ATOM   3569   CA GLU A 753      30.412  28.250  30.500  0.00  0.00           C 0
+ATOM   3498   CA PRO A 749      26.191  25.197  33.832  0.00  0.00           C 0
+ATOM   3456    O LEU A 746      23.035  25.412  29.493  0.28  3.21           O 0
+ATOM   3475    O GLU A 747      22.047  23.537  32.936  0.25  8.57           O 0
+ATOM   2842    O THR A 711      28.761  37.056  36.578  0.00  0.00           O 0
+ATOM   3551   CB LYS A 752      26.038  27.308  30.080  0.00  0.00           C 0
 TER
 END

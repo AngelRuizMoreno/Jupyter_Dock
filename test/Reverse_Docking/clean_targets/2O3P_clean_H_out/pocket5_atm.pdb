@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : 0.0184
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of alpha spheres           :    23
+HEADER 3  - Mean alpha-sphere radius          : 3.8502
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5840
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 17.0000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 5.1429
+HEADER 9  - Pocket volume (Monte Carlo)       : 327.4737
+HEADER 10  -Pocket volume (convex hull)       : 18.1671
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 9.2727
+HEADER 13 - Number of apolar alpha sphere     :    11
+HEADER 14 - Proportion of apolar alpha sphere : 0.4783
+ATOM   3907   CD PRO A 275      58.284   7.952   0.155  0.00  0.00           C 0
+ATOM   2827   CB GLU A 211      63.204   7.660   1.363  0.00  0.00           C 0
+ATOM   2919  CE2 TYR A 215      63.207   2.981   3.023  0.00  0.00           C 0
+ATOM   3904   CG PRO A 275      59.285   8.531  -0.770  0.00  0.00           C 0
+ATOM   2956   NE ARG A 217      66.606   2.840  -3.589  0.77  5.47           N 0
+ATOM   2946    O ARG A 217      65.776   7.666  -0.814  0.91  1.07           O 0
+ATOM   2915  CD2 TYR A 215      64.315   3.528   2.372  0.00  0.00           C 0
+ATOM   2913  CD1 TYR A 215      65.659   1.682   3.069  0.00  0.00           C 0
+ATOM   2912   CG TYR A 215      65.553   2.899   2.393  0.00  0.00           C 0
+ATOM   2909   CB TYR A 215      66.738   3.500   1.672  0.00  0.00           C 0
+ATOM   2953   CD ARG A 217      67.474   2.960  -2.417  0.00  0.00           C 0
+ATOM   2947   CB ARG A 217      67.213   5.434  -2.212  0.00  0.00           C 0
+ATOM   3000  CE1 HIS A 219      62.714   6.893  -6.924  0.00  0.00           C 0
+ATOM   2617  CG2 VAL A 197      66.764   6.495  -5.770  0.00  0.00           C 0
+ATOM   2998  ND1 HIS A 219      62.407   7.978  -6.237  0.60  8.75           N 0
+ATOM   2967   CA TYR A 218      65.441   9.574  -2.788  0.00  0.00           C 0
+ATOM   2986    N HIS A 219      64.085  10.545  -4.522  0.52  1.09           N 0
+ATOM   2965    N TYR A 218      66.556   8.637  -2.689  0.00  0.00           N 0
+ATOM   2945    C ARG A 217      66.627   7.744  -1.715  0.00  0.00           C 0
+ATOM   2830   CG GLU A 211      63.321   8.944   0.556  0.00  0.00           C 0
+TER
+END

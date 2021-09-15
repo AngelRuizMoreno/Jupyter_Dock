@@ -12,27 +12,27 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 24.5714
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 4.0000
-HEADER 9  - Pocket volume (Monte Carlo)       : 247.1797
+HEADER 9  - Pocket volume (Monte Carlo)       : 246.7497
 HEADER 10  -Pocket volume (convex hull)       : 12.0079
 HEADER 11 - Charge Score                      :    -1
 HEADER 12 - Local hydrophobic density Score   : 0.0000
 HEADER 13 - Number of apolar alpha sphere     :     1
 HEADER 14 - Proportion of apolar alpha sphere : 0.0588
-ATOM   1736  OD1 ASP A 107      17.711  38.895  29.131  0.52  7.50           O 0
-ATOM   1656  OE1 GLN A 102      18.664  38.990  20.928  0.66  7.50           O 0
-ATOM    769  ND2 ASN A  50      14.623  43.025  24.560  0.00  0.00           N 0
-ATOM    745    O LEU A  49      19.280  42.887  25.254  0.43  7.50           O 0
-ATOM   1670  OD1 ASN A 103      15.856  35.204  22.269  0.00  0.00           O 0
-ATOM   1653  NE2 GLN A 102      16.523  37.518  20.280  0.32  9.84           N 0
-ATOM    765   CB ASN A  50      16.598  43.987  25.676  0.00  0.00           C 0
-ATOM   1787  CD1 ILE A 110      20.942  37.782  25.738  0.00  0.00           C 0
-ATOM   1652   CD GLN A 102      17.986  37.749  20.623  0.00  0.00           C 0
-ATOM   1666   CG ASN A 103      15.553  34.056  21.839  0.00  0.00           C 0
-ATOM   1663   CB ASN A 103      16.301  32.816  22.269  0.00  0.00           C 0
-ATOM   1662    O ASN A 103      17.267  31.332  24.636  0.00  0.00           O 0
-ATOM   1645    O GLN A 102      19.634  34.588  24.107  0.00  0.00           O 0
-ATOM   1646   CB GLN A 102      19.800  36.553  21.370  0.00  0.00           C 0
-ATOM   1698    O LEU A 105      19.523  34.122  27.486  0.00  0.00           O 0
-ATOM   1659   CA ASN A 103      17.537  33.124  23.110  0.00  0.00           C 0
+ATOM   1736  OD1 ASP A 640      17.711  38.895  29.131  0.52  7.50           O 0
+ATOM   1656  OE1 GLN A 635      18.664  38.990  20.928  0.66  7.50           O 0
+ATOM    769  ND2 ASN A 583      14.623  43.025  24.560  0.00  0.00           N 0
+ATOM    745    O LEU A 582      19.280  42.887  25.254  0.43  7.50           O 0
+ATOM   1670  OD1 ASN A 636      15.856  35.204  22.269  0.00  0.00           O 0
+ATOM   1653  NE2 GLN A 635      16.523  37.518  20.280  0.32  9.84           N 0
+ATOM    765   CB ASN A 583      16.598  43.987  25.676  0.00  0.00           C 0
+ATOM   1787  CD1 ILE A 643      20.942  37.782  25.738  0.00  0.00           C 0
+ATOM   1652   CD GLN A 635      17.986  37.749  20.623  0.00  0.00           C 0
+ATOM   1666   CG ASN A 636      15.553  34.056  21.839  0.00  0.00           C 0
+ATOM   1663   CB ASN A 636      16.301  32.816  22.269  0.00  0.00           C 0
+ATOM   1662    O ASN A 636      17.267  31.332  24.636  0.00  0.00           O 0
+ATOM   1645    O GLN A 635      19.634  34.588  24.107  0.00  0.00           O 0
+ATOM   1646   CB GLN A 635      19.800  36.553  21.370  0.00  0.00           C 0
+ATOM   1698    O LEU A 638      19.523  34.122  27.486  0.00  0.00           O 0
+ATOM   1659   CA ASN A 636      17.537  33.124  23.110  0.00  0.00           C 0
 TER
 END

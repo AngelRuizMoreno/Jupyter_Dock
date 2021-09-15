@@ -12,29 +12,29 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 25.1250
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 3.8750
-HEADER 9  - Pocket volume (Monte Carlo)       : 310.3074
+HEADER 9  - Pocket volume (Monte Carlo)       : 305.8420
 HEADER 10  -Pocket volume (convex hull)       : 14.7919
 HEADER 11 - Charge Score                      :     1
 HEADER 12 - Local hydrophobic density Score   : 3.0000
 HEADER 13 - Number of apolar alpha sphere     :     4
 HEADER 14 - Proportion of apolar alpha sphere : 0.1818
-ATOM    893    N LYS A  58      22.138  54.868  32.117  0.00  0.00           N 0
-ATOM   2706   OG SER A 170      25.309  52.847  37.982  0.42  8.57           O 0
-ATOM    955  CG1 VAL A  61      27.439  55.318  33.049  0.00  0.00           C 0
-ATOM    959  CG2 VAL A  61      26.286  57.488  33.531  0.00  0.00           C 0
-ATOM    911   NZ LYS A  58      20.804  57.410  36.929  0.00  0.00           N 0
-ATOM   2710   CA GLY A 171      22.301  49.812  38.427  0.00  0.00           C 0
-ATOM   2702    O SER A 170      24.214  50.425  40.365  0.41  9.64           O 0
-ATOM    905   CD LYS A  58      21.758  58.393  34.913  0.00  0.00           C 0
-ATOM    902   CG LYS A  58      21.623  57.118  34.124  0.00  0.00           C 0
-ATOM   2647    O GLN A 167      27.343  52.368  35.758  0.55  2.14           O 0
-ATOM   2661   CA ILE A 168      27.372  51.077  33.316  0.00  0.00           C 0
-ATOM    899   CB LYS A  58      22.524  57.118  32.872  0.00  0.00           C 0
-ATOM    953   CB VAL A  61      26.569  56.419  32.477  0.00  0.00           C 0
-ATOM    864    O GLN A  56      20.474  52.742  34.209  0.70  5.36           O 0
-ATOM   2664    O ILE A 168      25.627  49.462  33.669  0.53  1.07           O 0
-ATOM   2708    N GLY A 171      23.699  50.122  38.200  0.27  2.19           N 0
-ATOM    865   CB GLN A  56      18.100  51.373  34.738  0.00  0.00           C 0
-ATOM    878   CA MET A  57      21.905  52.484  31.902  0.00  0.00           C 0
+ATOM    893    N LYS A 591      22.138  54.868  32.117  0.00  0.00           N 0
+ATOM   2706   OG SER A 702      25.309  52.847  37.982  0.42  8.57           O 0
+ATOM    955  CG1 VAL A 594      27.439  55.318  33.049  0.00  0.00           C 0
+ATOM    959  CG2 VAL A 594      26.286  57.488  33.531  0.00  0.00           C 0
+ATOM    911   NZ LYS A 591      20.804  57.410  36.929  0.00  0.00           N 0
+ATOM   2710   CA GLY A 703      22.301  49.812  38.427  0.00  0.00           C 0
+ATOM   2702    O SER A 702      24.214  50.425  40.365  0.41  9.64           O 0
+ATOM    905   CD LYS A 591      21.758  58.393  34.913  0.00  0.00           C 0
+ATOM    902   CG LYS A 591      21.623  57.118  34.124  0.00  0.00           C 0
+ATOM   2647    O GLN A 699      27.343  52.368  35.758  0.55  2.14           O 0
+ATOM   2661   CA ILE A 700      27.372  51.077  33.316  0.00  0.00           C 0
+ATOM    899   CB LYS A 591      22.524  57.118  32.872  0.00  0.00           C 0
+ATOM    953   CB VAL A 594      26.569  56.419  32.477  0.00  0.00           C 0
+ATOM    864    O GLN A 589      20.474  52.742  34.209  0.70  5.36           O 0
+ATOM   2664    O ILE A 700      25.627  49.462  33.669  0.53  1.07           O 0
+ATOM   2708    N GLY A 703      23.699  50.122  38.200  0.27  2.19           N 0
+ATOM    865   CB GLN A 589      18.100  51.373  34.738  0.00  0.00           C 0
+ATOM    878   CA MET A 590      21.905  52.484  31.902  0.00  0.00           C 0
 TER
 END

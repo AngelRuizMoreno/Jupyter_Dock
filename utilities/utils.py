@@ -58,7 +58,7 @@ def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
 
     if try_renumberResidues == True:
         try:
-            original=mda.Universe(output)
+            original=mda.Universe(filename)
             from_fix=mda.Universe(output)
 
             resNum=[res.resid for res in original.residues]
@@ -69,7 +69,7 @@ def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
             save.write(from_fix)
             save.close()
         except Exception:
-            print('SNot possible to renumber residues, check excepton for extra details')
+            print('Not possible to renumber residues, check excepton for extra details')
         
 
 def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_poses=10, l_list=[],l_list_outfile='',out='dock.in'):
