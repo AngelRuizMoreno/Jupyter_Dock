@@ -131,6 +131,18 @@ def DOKMolSupplier (file=None):
     return(mols)
 
 def dok_to_sdf (dok_file=None,output=None):
+
+    """
+    dok_to_sdf ( dok_file=None, output=None )
+
+    params:
+
+    dok_file: str or path-like ; dok file from ledock docking
+
+    output: str or path-like ; outfile from ledock docking, extension must be sdf
+
+   """
+
     mols=DOKMolSupplier(dok_file)
     out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
     for pose in mols:
