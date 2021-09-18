@@ -23,8 +23,11 @@
 
 ## Description
 
-**Jupyter Dock is a set of Jupyter Notebooks for performing molecular docking protocols interactively, as well as visualizing and analyzing the results.** \
-**See Jupyter Docks in action in my personal website: [chem-workflows](https://chem-workflows.com/)**
+**Jupyter Dock is a set of Jupyter Notebooks for performing molecular docking protocols interactively, as well as visualizing, converting file formats and analyzing the results.** <br><br>
+
+
+**See Jupyter Docks in action in my personal website: [chem-workflows](https://chem-workflows.com/)** <br><br>
+
 
 These notebooks are Python 3 compatible. Each protocol and Jupyter notebook has its own test folder for testing and reproducibility evaluation.
 
