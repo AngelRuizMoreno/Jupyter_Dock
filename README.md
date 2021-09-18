@@ -25,11 +25,11 @@
 
 **Jupyter Dock is a set of Jupyter Notebooks for performing molecular docking protocols interactively, as well as visualizing, converting file formats and analyzing the results.** <br><br>
 
-
 **See Jupyter Docks in action in my personal website: [chem-workflows](https://chem-workflows.com/)** <br><br>
 
-
 These notebooks are Python 3 compatible. Each protocol and Jupyter notebook has its own test folder for testing and reproducibility evaluation.
+
+For all notebooks, the demonstration includes the use of AutoDock Vina and Ledock. When available, some alternatives are mentioned in the protocol.
 
 The notebooks includes whole protocols for:
 
@@ -37,16 +37,16 @@ The notebooks includes whole protocols for:
 > For any new user, this is a good place to start. Jupyter Docks' main stages for molecular docking, as well as all functions, methods and codes are described here along with brief explanations, hints, and warnings.
 
 **2. Virtual Screening**
->
+> Interested in docking multiple ligands into a single target site? This is what you require. This protocol covers all steps from ligand preparation to docking pose visualization in the target site of interest.
 
 **3. Blind Docking**
->
+> Do you want to dock multiple ligands into whole target surface and/or its pockets? This protocol demonstrates the entire process of pocket search and their use as potential organic molecule binding sites.
 
-**4. Reverse Docking (Target fishing)**
->
+**4. Reverse Docking / Target fishing)**
+> Interested in docking one or a few molecules into a set of proteins to identify the most promising target(s)? This notebook covers all of the steps required to achieve such a goal in a condensed manner, making the process seem like a walk in the park.
 
 **5. Docking Analysis**
->
+> Have you completed your docking experiments with Jupyter Dock or another approach and want to conduct a rational analysis? You've come to the right place. This notebook summarizes the most common docking analysis techniques, including score comparisons, z-score calculation between softwares, pose clustering, molecular interactions mapping, and more.
 
 
 Question about usage or troubleshooting? Please leave a comment here
@@ -87,6 +87,10 @@ Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml
 - [Fpocket](http://fpocket.sourceforge.net/)
 - [Meeko](https://pypi.org/project/meeko/)
 - [Smina](https://sourceforge.net/projects/smina/)
+
+## Limitations
+
+## Examples
 
 ## Citation
 
