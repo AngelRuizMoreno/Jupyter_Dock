@@ -1,5 +1,7 @@
 # **Molecular Docking integrated in Jupyter Notebooks**
 
+[![DOI](https://zenodo.org/badge/405159870.svg)](https://zenodo.org/badge/latestdoi/405159870)
+
 [**Description**](#description) | [**Citation**](#citation) | [**Installation**](#installation) | [**Examples**](#examples) | [**Limitations**](#limitations) | [**License**](#license)
 
 ![logo](img/logo.jpg)
@@ -95,6 +97,9 @@ Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml
 ## Citation
 
 If you use these notebooks, please credit this repository and the required tools as follows:
+
+1. **Jupyter Dock**
+    > Ruiz-Moreno A.J. Jupyter Dock: Molecular Docking integrated in Jupyter Notebooks. https://doi.org/10.5281/zenodo.5514956
 
 1. **Autodock Vina** 
     > Eberhardt, J., Santos-Martins, D., Tillack, A.F., Forli, S. (2021). AutoDock Vina 1.2.0: New Docking Methods, Expanded Force Field, and Python Bindings. Journal of Chemical Information and Modeling.
