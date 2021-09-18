@@ -1,14 +1,12 @@
 # **Molecular Docking integrated in Jupyter Notebooks**
 
+[**Description**](#description) | [**Citation**](#citation) | [**Installation**](#installation) | [**Examples**](#examples) | [**Limitations**](#limitations) | [**License**](#license)
+
 ![logo](img/logo.jpg)
 
-A set of Jupyter Notebooks for performing molecular docking protocols interactively, as well as visualizing and analyzing the results.
-
-These notebooks should be compatible with Python 3.
-
-Question about usage or troubleshooting? Please leave a comment here.
-
 ## Table of content
+
+- [**Description**](#description)
 
 - [**Installation**](#installation)
 
@@ -16,16 +14,43 @@ Question about usage or troubleshooting? Please leave a comment here.
 
 - [**Limitations**](#limitations)
 
-- [**Examples (How to)**](#examples_how_to)
+- [**Examples**](#examples)
 
 - [**Citation**](#citation)
 
 - [**License**](#license) 
 
 
+## Description
+
+**Jupyter Dock is a set of Jupyter Notebooks for performing molecular docking protocols interactively, as well as visualizing and analyzing the results.** \
+**See Jupyter Docks in action in my personal website: [chem-workflows](https://chem-workflows.com/)**
+
+These notebooks are Python 3 compatible. Each protocol and Jupyter notebook has its own test folder for testing and reproducibility evaluation.
+
+The notebooks includes whole protocols for:
+
+**1. Molecular Docking**
+> For any new user, this is a good place to start. Jupyter Docks' main stages for molecular docking, as well as all functions, methods and codes are described here along with brief explanations, hints, and warnings.
+
+**2. Virtual Screening**
+>
+
+**3. Blind Docking**
+>
+
+**4. Reverse Docking (Target fishing)**
+>
+
+**5. Docking Analysis**
+>
+
+
+Question about usage or troubleshooting? Please leave a comment here
+
 ## Installation 
 
-- Available as GitHub repo:
+- **Available as GitHub repo:**
 
 ```
 $git clone https://github.com/AngelRuizMoreno/Jupyter_Dock.git
@@ -34,6 +59,13 @@ $conda env create -f Jupyter_Dock.yml
 ```
 
 After installing the prerequisites, you can activate the conda environment and run/modify the Jupyter Notebooks.
+
+
+- **GoogleColab:**
+
+```
+Not yet available.
+```
 
 ## Requirements
 
@@ -97,15 +129,5 @@ If you use these notebooks, please credit this repository and the required tools
 1. **Smina**
     > Koes, D. R., Baumgartner, M. P., & Camacho, C. J. (2013). Lessons learned in empirical scoring with smina from the CSAR 2011 benchmarking exercise. Journal of chemical information and modeling, 53(8), 1893–1904. https://doi.org/10.1021/ci300604z
 
-
-```python
-
-```
-
 ## License
 These notebooks are under MIT, see the LICENSE file for details.
-
-
-```python
-
-```
