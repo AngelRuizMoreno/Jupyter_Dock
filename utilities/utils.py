@@ -106,30 +106,6 @@ def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_
 
 
 
-def DOKMolSupplier (file=None):
-    mols=[]
-    with open(file, 'r') as f:
-        doc=[line for line in f.readlines()]
-    doc=[line.replace(line.split()[2],line.split()[2].upper()) if 'ATOM' in line else line for line in doc]
-    
-    scores=[line.split()[-2] for line in doc if 'REMARK Cluster' in line]
-    poses=[line.split()[2] for line in doc if 'REMARK Cluster' in line]
-
-    start=[index for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
-    finish=[index-1 for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
-    finish.append(len(doc))
-
-    interval=list(zip(start,finish[1:]))
-    for num,i in enumerate(interval):
-        try:
-            block = ",".join(doc[i[0]:i[1]]).replace(',','')
-
-            m=pybel.readstring(format='pdb',string=block)
-            mols.append(m)
-        except Exception:
-            pass
-    return(mols)
-
 def dok_to_sdf (dok_file=None,output=None):
 
     """
@@ -142,11 +118,42 @@ def dok_to_sdf (dok_file=None,output=None):
     output: str or path-like ; outfile from ledock docking, extension must be sdf
 
    """
-
-    mols=DOKMolSupplier(dok_file)
     out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
-    for pose in mols:
-        pose.addh()
+
+    with open(dok_file, 'r') as f:
+        doc=[line for line in f.readlines()]
+    
+    doc=[line.replace(line.split()[2],line.split()[2].upper()) if 'ATOM' in line else line for line in doc]
+    
+    start=[index for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
+    finish=[index-1 for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
+    finish.append(len(doc))
+
+    interval=list(zip(start,finish[1:]))
+    for num,i in enumerate(interval):
+        block = ",".join(doc[i[0]:i[1]]).replace(',','')
+
+        m=pybel.readstring(format='pdb',string=block)
+        
+        m.data.update({'Pose':m.data['REMARK'].split()[4]})
+        m.data.update({'Score':m.data['REMARK'].split()[6]})
+        del m.data['REMARK']
+
+        out.write(m)
+
+    out.close()
+  
+
+def pdbqt_to_sdf(pdbqt_file=None,output=None):
+
+    results = [m for m in pybel.readfile(filename=pdbqt_file,format='pdbqt')]
+    out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
+    for pose in results:
+
+        pose.data.update({'Pose':pose.data['MODEL']})
+        pose.data.update({'Score':pose.data['REMARK'].split()[2]})
+        del pose.data['MODEL'], pose.data['REMARK'], pose.data['TORSDO']
+
         out.write(pose)
     out.close()
 
