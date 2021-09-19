@@ -78,7 +78,7 @@ Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml
 
 - [Autodock Vina](https://autodock-vina.readthedocs.io/en/latest/) 
 - [AutoDock Tools](http://autodock.scripps.edu/resources/adt)
-- [Ledock and Lepro](http://www.lephar.com/software.htm)
+- [LeDock and LePro](http://www.lephar.com/software.htm)
 - [Pymol API](https://pymol.org/2/)
 - [OpenBabel](http://openbabel.org/wiki/Main_Page)
 - [RDKit](https://www.rdkit.org/)
@@ -92,7 +92,37 @@ Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml
 
 ## Limitations
 
+Jupyter Dock's initial goal was to provide a set of pythonic protocols for molecular docking. Nonetheless, there is a dearth of docking tools in Python for all of the steps and protocols (i.e. pocket search for blind docking). Furthermore, the majority of well-known and widely used molecular docking softwares have been developed as stand-alone executables or as components of software suites. As a result, Jupyter Dock evolved into a notebook, attempting to organize and compile the tools required for the rational implementation of molecular docking.
+
+The following are the main drawbacks of this approach:
+
+- The AutoDock Tools binary files "prepare_rotein" and "prepare_lgand are still missing for MacOs.
+
+- There is no guarantee that these jupyter notebooks will run on Windows. The alternative for these users would be to run Jupyter Dock through the Windows Subsystem for Linux (WSL)
+
+    > Actually, I built Jupyter Dock in a Xiomi Mi Laptop Air using the WSL.
+    
+- Ubuntu 18.4 (x86 64) was used to compile the binary files for fpocket, prepare protein, and prepare ligand. As a result, they can function differently in other operating systems and architectures.
+
 ## Examples
+
+
+### Docking powered by AutoDock Tools and LeDock
+
+<img src="img/dock.jpg" width="400" height="400" />
+
+### 3D visualization of Docking results powered by py3Dmol
+
+<img src="img/md.jpg" width="400" height="400" />
+
+### 2D interaction maps powered by ProLif
+
+<img src="img/2d.jpg" width="400" height="400" />
+
+
+### Pocket search powered by Fpocket
+
+<img src="img/pocket.jpg" width="400" height="400" />
 
 ## Citation
 
