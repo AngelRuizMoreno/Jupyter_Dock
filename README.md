@@ -125,22 +125,22 @@ Make sure your system has a working GCC before beginning the ProLif installation
 pip install git+https://github.com/chemosim-lab/ProLIF.git 
 ```
 
-
-
 - Smina, Fpocket,LeDock, LePro and AutoDock Tools executables are provided in the bin folder of this repo.
+
+> It is highly likely that the AutoDock Tools binaries will need to be compiled on your machine before they can be used. In this case, you must download them from https://ccsb.scripps.edu/adfr/downloads/ and then follow the installation instructions.
+
+To address this limitation, the notebooks include the use of Smina binary as an alternative to AutoDock Vina, which offers several advantages for protein and ligand preration and formats, among other things.
+
 
 **2. Available as GitHub repo:**
 
 2.1. Clone the repository and create the Jupyter_Dock environment from the Jupyter_Dock.yaml file.
-
 ```
 $git clone https://github.com/AngelRuizMoreno/Jupyter_Dock.git
 $cd Jupyter_Dock
 $conda env create -f Jupyter_Dock.yml
 ```
-
 After installing the prerequisites, you can activate the conda environment and run/modify the Jupyter Notebooks.
-
 
 **3. GoogleColab:**
 
