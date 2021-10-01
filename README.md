@@ -10,9 +10,9 @@
 
 - [**Description**](#description)
 
-- [**Installation**](#installation)
-
 - [**Requirements**](#requirements)
+
+- [**Installation**](#installation)
 
 - [**Limitations**](#limitations)
 
@@ -53,25 +53,6 @@ The notebooks includes whole protocols for:
 
 Question about usage or troubleshooting? Please leave a comment here
 
-## Installation 
-
-- **Available as GitHub repo:**
-
-```
-$git clone https://github.com/AngelRuizMoreno/Jupyter_Dock.git
-$cd Jupyter_Dock
-$conda env create -f Jupyter_Dock.yml
-```
-
-After installing the prerequisites, you can activate the conda environment and run/modify the Jupyter Notebooks.
-
-
-- **GoogleColab:**
-
-```
-Not yet available.
-```
-
 ## Requirements
 
 Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml file contains all the tools and dependencies, but the following are some of the most noticeable:
@@ -89,6 +70,83 @@ Jupyter Dock is reliant on a variety of academic software. The Jupyter Dock.yaml
 - [Fpocket](http://fpocket.sourceforge.net/)
 - [Meeko](https://pypi.org/project/meeko/)
 - [Smina](https://sourceforge.net/projects/smina/)
+
+## Installation 
+
+**1. Installing all dependencies one by one:**
+
+1.1. Create a conda enviroment  
+
+```
+conda create -n Jupyter_Dock python=3.8
+conda activate Jupyter_Dock
+```
+
+1.2. Install de dependencies 
+
+- PyMol
+```
+conda install -c schrodinger pymol
+```
+
+- py3Dmol
+```
+conda install -c conda-forge py3dmol
+```
+
+- AutoDock Vina
+```
+pip install vina
+```
+
+- OpenBabel (Pybel)
+```
+conda install -c conda-forge openbabel
+```
+
+- Meeko 
+```
+pip install meeko
+```
+
+- PDBFixer
+```
+conda install -c conda-forge pdbfixer
+```
+
+- ProLif, RDKit and MDAnalysis
+
+To achieve a successful installation, the current development of ProLif necessitates a number of dependencies and steps. The quickest way to get a fully functional ProLif is to follow the steps below:
+```
+conda install rdkit cython
+```
+Make sure your system has a working GCC before beginning the ProLif installation (needed to compile MDAnalysis).
+```
+pip install git+https://github.com/chemosim-lab/ProLIF.git 
+```
+
+
+
+- Smina, Fpocket,LeDock, LePro and AutoDock Tools executables are provided in the bin folder of this repo.
+
+**2. Available as GitHub repo:**
+
+2.1. Clone the repository and create the Jupyter_Dock environment from the Jupyter_Dock.yaml file.
+
+```
+$git clone https://github.com/AngelRuizMoreno/Jupyter_Dock.git
+$cd Jupyter_Dock
+$conda env create -f Jupyter_Dock.yml
+```
+
+After installing the prerequisites, you can activate the conda environment and run/modify the Jupyter Notebooks.
+
+
+**3. GoogleColab:**
+
+```
+Not yet available.
+```
 
 ## Limitations
 
