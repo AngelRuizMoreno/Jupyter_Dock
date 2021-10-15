@@ -12,28 +12,28 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 5.8750
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 3.1250
-HEADER 9  - Pocket volume (Monte Carlo)       : 267.1695
+HEADER 9  - Pocket volume (Monte Carlo)       : 270.1546
 HEADER 10  -Pocket volume (convex hull)       : 7.1812
 HEADER 11 - Charge Score                      :    -3
 HEADER 12 - Local hydrophobic density Score   : 0.0000
 HEADER 13 - Number of apolar alpha sphere     :     0
 HEADER 14 - Proportion of apolar alpha sphere : 0.0000
-ATOM   1609  OG1 THR A 134      68.059  33.130  14.206  0.00  0.00           O 0
-ATOM   1599   CA THR A 134      66.020  34.310  14.839  0.00  0.00           C 0
-ATOM   3293  OD1 ASP A 239      64.668  26.859  16.324  0.77  9.64           O 0
-ATOM   1605  CG2 THR A 134      68.238  34.586  16.039  0.00  0.00           C 0
-ATOM   3294  OD2 ASP A 239      63.280  27.295  17.911  0.24  8.57           O 0
-ATOM   1542  CE2 PHE A 130      69.558  28.998  11.933  0.00  0.00           C 0
-ATOM   1544   CZ PHE A 130      70.233  29.814  12.826  0.00  0.00           C 0
-ATOM   1531    O PHE A 130      66.987  33.300  11.379  0.50  1.07           O 0
-ATOM   2195  OD2 ASP A 170      65.665  29.066   9.448  0.64  2.14           O 0
-ATOM   3230  OD1 ASP A 234      62.964  27.198  11.464  0.47  3.21           O 0
+ATOM   1601  OG1 THR A 134      68.059  33.130  14.206  0.00  0.00           O 0
+ATOM   1597   CA THR A 134      66.020  34.310  14.839  0.00  0.00           C 0
+ATOM   3289  OD1 ASP A 239      64.668  26.859  16.324  0.77  9.64           O 0
+ATOM   1603  CG2 THR A 134      68.238  34.586  16.039  0.00  0.00           C 0
+ATOM   3290  OD2 ASP A 239      63.280  27.295  17.911  0.24  8.57           O 0
+ATOM   1540  CE2 PHE A 130      69.558  28.998  11.933  0.00  0.00           C 0
+ATOM   1536   CZ PHE A 130      70.233  29.814  12.826  0.00  0.00           C 0
+ATOM   1543    O PHE A 130      66.987  33.300  11.379  0.62  1.07           O 0
+ATOM   2191  OD2 ASP A 170      65.665  29.066   9.448  0.64  2.14           O 0
+ATOM   3226  OD1 ASP A 234      62.964  27.198  11.464  0.47  3.21           O 0
 ATOM   1538  CD2 PHE A 130      69.034  29.539  10.725  0.00  0.00           C 0
-ATOM   1589  CG2 ILE A 133      62.640  31.797  12.663  0.00  0.00           C 0
-ATOM   3282    O GLY A 238      62.393  29.050  15.296  0.72  6.43           O 0
-ATOM   1602    O THR A 134      65.244  35.520  16.742  0.00  0.00           O 0
-ATOM   1597    N THR A 134      65.363  34.227  13.544  0.00  0.00           N 0
-ATOM   1583    O ILE A 133      63.354  34.064  14.470  0.42  2.14           O 0
-ATOM   1652   CA GLY A 137      60.457  34.350  16.065  0.00  0.00           C 0
+ATOM   1582  CG2 ILE A 133      62.640  31.797  12.663  0.00  0.00           C 0
+ATOM   3280    O GLY A 238      62.393  29.050  15.296  0.72  6.43           O 0
+ATOM   1608    O THR A 134      65.244  35.520  16.742  0.00  0.00           O 0
+ATOM   1595    N THR A 134      65.363  34.227  13.544  0.00  0.00           N 0
+ATOM   1594    O ILE A 133      63.354  34.064  14.470  0.53  2.14           O 0
+ATOM   1650   CA GLY A 137      60.457  34.350  16.065  0.00  0.00           C 0
 TER
 END

@@ -12,34 +12,34 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 27.5714
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 4.5714
-HEADER 9  - Pocket volume (Monte Carlo)       : 265.2279
+HEADER 9  - Pocket volume (Monte Carlo)       : 272.1594
 HEADER 10  -Pocket volume (convex hull)       : 16.4956
 HEADER 11 - Charge Score                      :     1
 HEADER 12 - Local hydrophobic density Score   : 19.0000
 HEADER 13 - Number of apolar alpha sphere     :    20
 HEADER 14 - Proportion of apolar alpha sphere : 0.6061
-ATOM   4898  NE2 HIS A 834      28.832  19.341  13.111  0.00  0.00           N 0
-ATOM   3349   CG ARG A 740      31.928  12.937  17.505  0.00  0.00           C 0
-ATOM   3346   CB ARG A 740      31.761  14.125  18.450  0.00  0.00           C 0
-ATOM   3342   CA ARG A 740      30.261  14.485  18.596  0.00  0.00           C 0
-ATOM   3340    N ARG A 740      30.131  15.712  19.369  0.00  0.00           N 0
-ATOM   3332  CG2 ILE A 739      28.800  18.703  18.091  0.00  0.00           C 0
-ATOM   3272    O PHE A 736      32.644  17.068  19.888  0.68  1.07           O 0
-ATOM   3327   CB ILE A 739      29.429  18.758  19.519  0.00  0.00           C 0
-ATOM   3269   CA PHE A 736      33.995  18.989  20.281  0.00  0.00           C 0
-ATOM   4892  CD2 HIS A 834      28.911  20.259  14.138  0.00  0.00           C 0
-ATOM   4838  OE2 GLU A 830      34.556  20.733  11.196  0.00  0.00           O 0
-ATOM   4830   CB GLU A 830      32.632  22.637  11.964  0.00  0.00           C 0
-ATOM   4845   CB ALA A 831      31.960  23.260  17.152  0.00  0.00           C 0
-ATOM   3279  CD2 PHE A 736      35.006  21.395  18.871  0.00  0.00           C 0
-ATOM   3273   CB PHE A 736      35.317  18.947  19.488  0.00  0.00           C 0
-ATOM   4772    O GLN A 827      34.562  23.420  14.963  0.68  1.07           O 0
-ATOM   4839    N ALA A 831      31.667  23.537  14.735  0.00  0.00           N 0
-ATOM   4773   CB GLN A 827      37.468  22.251  14.452  0.00  0.00           C 0
-ATOM   3276   CG PHE A 736      35.823  20.290  18.996  0.00  0.00           C 0
-ATOM   4780  NE2 GLN A 827      39.113  19.742  15.438  0.00  0.00           N 0
-ATOM   4841   CA ALA A 831      30.935  23.248  16.003  0.00  0.00           C 0
-ATOM   4776   CG GLN A 827      38.241  21.210  13.723  0.00  0.00           C 0
-ATOM   3277  CD1 PHE A 736      37.173  20.423  18.655  0.00  0.00           C 0
+ATOM   4877  NE2 HSD A 834      28.832  19.341  13.111  0.00  0.00           N 0
+ATOM   3330   CG ARG A 740      31.928  12.937  17.505  0.00  0.00           C 0
+ATOM   3327   CB ARG A 740      31.761  14.125  18.450  0.00  0.00           C 0
+ATOM   3325   CA ARG A 740      30.261  14.485  18.596  0.00  0.00           C 0
+ATOM   3323    N ARG A 740      30.131  15.712  19.369  0.00  0.00           N 0
+ATOM   3310  CG2 ILE A 739      28.800  18.703  18.091  0.00  0.00           C 0
+ATOM   3269    O PHE A 736      32.644  17.068  19.888  0.68  1.07           O 0
+ATOM   3308   CB ILE A 739      29.429  18.758  19.519  0.00  0.00           C 0
+ATOM   3252   CA PHE A 736      33.995  18.989  20.281  0.00  0.00           C 0
+ATOM   4878  CD2 HSD A 834      28.911  20.259  14.138  0.00  0.00           C 0
+ATOM   4819  OE2 GLU A 830      34.556  20.733  11.196  0.00  0.00           O 0
+ATOM   4811   CB GLU A 830      32.632  22.637  11.964  0.00  0.00           C 0
+ATOM   3264  CD2 PHE A 736      35.006  21.395  18.871  0.00  0.00           C 0
+ATOM   4826   CB ALA A 831      31.960  23.260  17.152  0.00  0.00           C 0
+ATOM   3254   CB PHE A 736      35.317  18.947  19.488  0.00  0.00           C 0
+ATOM   4822    N ALA A 831      31.667  23.537  14.735  0.00  0.00           N 0
+ATOM   3257   CG PHE A 736      35.823  20.290  18.996  0.00  0.00           C 0
+ATOM   4762  NE2 GLN A 827      39.113  19.742  15.438  0.00  0.00           N 0
+ATOM   3258  CD1 PHE A 736      37.173  20.423  18.655  0.00  0.00           C 0
+ATOM   4757   CG GLN A 827      38.241  21.210  13.723  0.00  0.00           C 0
+ATOM   4754   CB GLN A 827      37.468  22.251  14.452  0.00  0.00           C 0
+ATOM   4824   CA ALA A 831      30.935  23.248  16.003  0.00  0.00           C 0
+ATOM   4766    O GLN A 827      34.562  23.420  14.963  0.70  1.07           O 0
 TER
 END

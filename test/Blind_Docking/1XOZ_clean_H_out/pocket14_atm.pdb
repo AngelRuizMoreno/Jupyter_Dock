@@ -3,38 +3,35 @@ HEADER This is a pdb format file writen by the programm fpocket.
 HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
 HEADER                                                                           
 HEADER Information about the pocket    14:
-HEADER 0  - Pocket Score                      : -0.0579
+HEADER 0  - Pocket Score                      : -0.0657
 HEADER 1  - Drug Score                        : 0.0002
-HEADER 2  - Number of alpha spheres           :    22
-HEADER 3  - Mean alpha-sphere radius          : 3.6869
-HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3809
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.7763
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4319
 HEADER 5  - Mean B-factor of pocket residues  : 0.0000
-HEADER 6  - Hydrophobicity Score              : 25.1250
+HEADER 6  - Hydrophobicity Score              : 18.1429
 HEADER 7  - Polarity Score                    :     4
-HEADER 8  - Amino Acid based volume Score     : 3.8750
-HEADER 9  - Pocket volume (Monte Carlo)       : 305.8420
-HEADER 10  -Pocket volume (convex hull)       : 14.7919
+HEADER 8  - Amino Acid based volume Score     : 3.7143
+HEADER 9  - Pocket volume (Monte Carlo)       : 290.8466
+HEADER 10  -Pocket volume (convex hull)       : 8.7328
 HEADER 11 - Charge Score                      :     1
-HEADER 12 - Local hydrophobic density Score   : 3.0000
-HEADER 13 - Number of apolar alpha sphere     :     4
-HEADER 14 - Proportion of apolar alpha sphere : 0.1818
-ATOM    893    N LYS A 591      22.138  54.868  32.117  0.00  0.00           N 0
-ATOM   2706   OG SER A 702      25.309  52.847  37.982  0.42  8.57           O 0
-ATOM    955  CG1 VAL A 594      27.439  55.318  33.049  0.00  0.00           C 0
-ATOM    959  CG2 VAL A 594      26.286  57.488  33.531  0.00  0.00           C 0
-ATOM    911   NZ LYS A 591      20.804  57.410  36.929  0.00  0.00           N 0
-ATOM   2710   CA GLY A 703      22.301  49.812  38.427  0.00  0.00           C 0
-ATOM   2702    O SER A 702      24.214  50.425  40.365  0.41  9.64           O 0
-ATOM    905   CD LYS A 591      21.758  58.393  34.913  0.00  0.00           C 0
-ATOM    902   CG LYS A 591      21.623  57.118  34.124  0.00  0.00           C 0
-ATOM   2647    O GLN A 699      27.343  52.368  35.758  0.55  2.14           O 0
-ATOM   2661   CA ILE A 700      27.372  51.077  33.316  0.00  0.00           C 0
-ATOM    899   CB LYS A 591      22.524  57.118  32.872  0.00  0.00           C 0
-ATOM    953   CB VAL A 594      26.569  56.419  32.477  0.00  0.00           C 0
-ATOM    864    O GLN A 589      20.474  52.742  34.209  0.70  5.36           O 0
-ATOM   2664    O ILE A 700      25.627  49.462  33.669  0.53  1.07           O 0
-ATOM   2708    N GLY A 703      23.699  50.122  38.200  0.27  2.19           N 0
-ATOM    865   CB GLN A 589      18.100  51.373  34.738  0.00  0.00           C 0
-ATOM    878   CA MET A 590      21.905  52.484  31.902  0.00  0.00           C 0
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.2000
+ATOM    890    N LYS A 591      22.138  54.868  32.117  0.00  0.00           N 0
+ATOM   2687   OG SER A 702      25.309  52.847  37.982  0.04  3.21           O 0
+ATOM    950  CG1 VAL A 594      27.439  55.318  33.049  0.00  0.00           C 0
+ATOM    954  CG2 VAL A 594      26.286  57.488  33.531  0.00  0.00           C 0
+ATOM    906   NZ LYS A 591      20.804  57.410  36.929  0.00  0.00           N 0
+ATOM   2693   CA GLY A 703      22.301  49.812  38.427  0.00  0.00           C 0
+ATOM   2690    O SER A 702      24.214  50.425  40.365  0.41  9.64           O 0
+ATOM    894   CB LYS A 591      22.524  57.118  32.872  0.00  0.00           C 0
+ATOM   2641    O GLN A 699      27.343  52.368  35.758  0.58  2.14           O 0
+ATOM   2644   CA ILE A 700      27.372  51.077  33.316  0.00  0.00           C 0
+ATOM    948   CB VAL A 594      26.569  56.419  32.477  0.00  0.00           C 0
+ATOM    900   CD LYS A 591      21.758  58.393  34.913  0.00  0.00           C 0
+ATOM    897   CG LYS A 591      21.623  57.118  34.124  0.00  0.00           C 0
+ATOM    872    O GLN A 589      20.474  52.742  34.209  0.21  3.21           O 0
+ATOM    860   CB GLN A 589      18.100  51.373  34.738  0.00  0.00           C 0
 TER
 END

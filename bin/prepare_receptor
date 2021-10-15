@@ -6,7 +6,7 @@
 
 ######
 ## Set some environment variables.
-ADS_ROOT="/mnt/c/Users/angel/Desktop/Reverse_docking_vina/ADFRsuite" 
+ADS_ROOT="/mnt/d/Projects/Jupyter_Dock_devel/bin/ADFRsuite" 
 export ADS_ROOT
 
 ########

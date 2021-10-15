@@ -12,26 +12,26 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 30.5714
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 4.4286
-HEADER 9  - Pocket volume (Monte Carlo)       : 203.9455
+HEADER 9  - Pocket volume (Monte Carlo)       : 202.5772
 HEADER 10  -Pocket volume (convex hull)       : 3.8818
 HEADER 11 - Charge Score                      :     0
 HEADER 12 - Local hydrophobic density Score   : 14.0000
 HEADER 13 - Number of apolar alpha sphere     :    15
 HEADER 14 - Proportion of apolar alpha sphere : 0.7500
-ATOM   4005   CA GLU A 780      47.995  42.585   6.502  0.00  0.00           C 0
-ATOM   4567  CG2 ILE A 813      50.523  35.661   4.861  0.00  0.00           C 0
-ATOM   4571  CD1 ILE A 813      52.718  37.710   5.387  0.00  0.00           C 0
-ATOM   3998    O ALA A 779      47.800  40.348   8.083  0.55  1.07           O 0
-ATOM   3999   CB ALA A 779      45.360  38.813   6.626  0.00  0.00           C 0
-ATOM   5211  CH2 TRP A 853      46.741  36.283   3.338  0.00  0.00           C 0
-ATOM   4059   CB ALA A 783      51.282  40.467   8.370  0.00  0.00           C 0
-ATOM   4516   NZ LYS A 810      53.771  41.631   4.691  0.75  9.84           N 0
-ATOM   4003    N GLU A 780      46.803  41.742   6.664  0.00  0.00           N 0
-ATOM   3938    O GLN A 776      44.789  41.582   4.299  0.56  1.07           O 0
-ATOM   3942   CG GLN A 776      44.314  40.627   1.100  0.00  0.00           C 0
-ATOM   4012   CG GLU A 780      47.776  43.310   3.951  0.00  0.00           C 0
-ATOM   3949  OE1 GLN A 776      44.882  40.129  -1.157  0.70  7.50           O 0
-ATOM   4513   CE LYS A 810      54.264  40.944   3.436  0.00  0.00           C 0
-ATOM   3997    C ALA A 779      46.805  40.685   7.486  0.00  0.00           C 0
+ATOM   3986    N GLU A 780      46.803  41.742   6.664  0.00  0.00           N 0
+ATOM   3980   CB ALA A 779      45.360  38.813   6.626  0.00  0.00           C 0
+ATOM   5192  CH2 TRP A 853      46.741  36.283   3.338  0.00  0.00           C 0
+ATOM   3984    C ALA A 779      46.805  40.685   7.486  0.00  0.00           C 0
+ATOM   3932    O GLN A 776      44.789  41.582   4.299  0.71  1.07           O 0
+ATOM   3985    O ALA A 779      47.800  40.348   8.083  0.58  1.07           O 0
+ATOM   4545  CG2 ILE A 813      50.523  35.661   4.861  0.00  0.00           C 0
+ATOM   4497   NZ LYS A 810      53.771  41.631   4.691  0.75  9.84           N 0
+ATOM   3988   CA GLU A 780      47.995  42.585   6.502  0.00  0.00           C 0
+ATOM   4552  CD1 ILE A 813      52.718  37.710   5.387  0.00  0.00           C 0
+ATOM   4040   CB ALA A 783      51.282  40.467   8.370  0.00  0.00           C 0
+ATOM   3993   CG GLU A 780      47.776  43.310   3.951  0.00  0.00           C 0
+ATOM   4494   CE LYS A 810      54.264  40.944   3.436  0.00  0.00           C 0
+ATOM   3923   CG GLN A 776      44.314  40.627   1.100  0.00  0.00           C 0
+ATOM   3927  OE1 GLN A 776      44.882  40.129  -1.157  0.70  7.50           O 0
 TER
 END

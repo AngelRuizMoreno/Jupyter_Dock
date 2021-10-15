@@ -12,28 +12,28 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : -13.2000
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 3.4000
-HEADER 9  - Pocket volume (Monte Carlo)       : 203.4603
+HEADER 9  - Pocket volume (Monte Carlo)       : 201.3899
 HEADER 10  -Pocket volume (convex hull)       : 3.9955
 HEADER 11 - Charge Score                      :     1
 HEADER 12 - Local hydrophobic density Score   : 12.0000
 HEADER 13 - Number of apolar alpha sphere     :    13
 HEADER 14 - Proportion of apolar alpha sphere : 0.6500
-ATOM   3720  CD2 HIS A 265      44.785  18.124   5.579  0.00  0.00           C 0
-ATOM   4100  NE2 HIS A 287      46.094  21.804   2.754  0.76  1.09           N 0
-ATOM   3726  NE2 HIS A 265      44.837  17.659   4.287  0.58  4.37           N 0
-ATOM   4110   CG PRO A 288      42.137  24.060   1.067  0.00  0.00           C 0
-ATOM   3722  ND1 HIS A 265      46.115  19.380   4.382  0.00  0.00           N 0
-ATOM   4098  CE1 HIS A 287      46.314  23.006   3.242  0.00  0.00           C 0
-ATOM   3676   CG GLU A 262      42.790  25.223   6.407  0.00  0.00           C 0
-ATOM   3669   CA GLU A 262      44.929  24.182   7.248  0.00  0.00           C 0
-ATOM   3667    N GLU A 262      44.584  24.298   8.662  0.00  0.00           N 0
-ATOM   3660    C SER A 261      44.864  23.339   9.532  0.00  0.00           C 0
-ATOM   3662   CB SER A 261      43.015  23.148  11.203  0.00  0.00           C 0
-ATOM   3719   CG HIS A 265      45.595  19.211   5.647  0.00  0.00           C 0
-ATOM   3724  CE1 HIS A 265      45.655  18.428   3.588  0.00  0.00           C 0
-ATOM   4095  CD2 HIS A 287      46.302  21.829   1.400  0.00  0.00           C 0
-ATOM   4113   CD PRO A 288      43.506  23.667   0.554  0.00  0.00           C 0
-ATOM   3661    O SER A 261      45.394  22.274   9.209  0.00  0.00           O 0
-ATOM   3716   CB HIS A 265      45.950  20.107   6.788  0.00  0.00           C 0
+ATOM   3721  CD2 HSE A 265      44.785  18.124   5.579  0.00  0.00           C 0
+ATOM   4094  NE2 HSE A 287      46.094  21.804   2.754  0.51  1.09           N 0
+ATOM   3719  NE2 HSE A 265      44.837  17.659   4.287  0.58  4.37           N 0
+ATOM   4109   CG PRO A 288      42.137  24.060   1.067  0.00  0.00           C 0
+ATOM   3715  ND1 HSE A 265      46.115  19.380   4.382  0.00  0.00           N 0
+ATOM   4092  CE1 HSE A 287      46.314  23.006   3.242  0.00  0.00           C 0
+ATOM   3672   CG GLU A 262      42.790  25.223   6.407  0.00  0.00           C 0
+ATOM   3667   CA GLU A 262      44.929  24.182   7.248  0.00  0.00           C 0
+ATOM   3665    N GLU A 262      44.584  24.298   8.662  0.00  0.00           N 0
+ATOM   3663    C SER A 261      44.864  23.339   9.532  0.00  0.00           C 0
+ATOM   3658   CB SER A 261      43.015  23.148  11.203  0.00  0.00           C 0
+ATOM   3716   CG HSE A 265      45.595  19.211   5.647  0.00  0.00           C 0
+ATOM   3717  CE1 HSE A 265      45.655  18.428   3.588  0.00  0.00           C 0
+ATOM   4096  CD2 HSE A 287      46.302  21.829   1.400  0.00  0.00           C 0
+ATOM   4101   CD PRO A 288      43.506  23.667   0.554  0.00  0.00           C 0
+ATOM   3664    O SER A 261      45.394  22.274   9.209  0.00  0.00           O 0
+ATOM   3712   CB HSE A 265      45.950  20.107   6.788  0.00  0.00           C 0
 TER
 END

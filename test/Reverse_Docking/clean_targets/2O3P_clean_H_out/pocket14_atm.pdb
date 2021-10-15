@@ -12,31 +12,31 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : -2.8333
 HEADER 7  - Polarity Score                    :     6
 HEADER 8  - Amino Acid based volume Score     : 5.0000
-HEADER 9  - Pocket volume (Monte Carlo)       : 320.3828
+HEADER 9  - Pocket volume (Monte Carlo)       : 321.5508
 HEADER 10  -Pocket volume (convex hull)       : 19.3262
 HEADER 11 - Charge Score                      :    -1
 HEADER 12 - Local hydrophobic density Score   : 6.0000
 HEADER 13 - Number of apolar alpha sphere     :     7
 HEADER 14 - Proportion of apolar alpha sphere : 0.3333
-ATOM   4084  OD1 ASN A 286      45.727  25.560  -7.554  0.00  0.00           O 0
-ATOM   4010    O GLU A 282      48.859  22.780  -6.584  0.00  0.00           O 0
-ATOM   4081  ND2 ASN A 286      46.047  23.459  -8.249  0.66  2.19           N 0
-ATOM   4014   CG GLU A 282      48.704  21.733  -9.733  0.00  0.00           C 0
-ATOM   4017   CD GLU A 282      48.217  20.939 -10.938  0.00  0.00           C 0
-ATOM   1975  NH2 ARG A 156      54.152  26.433 -12.436  0.00  0.00           N 0
-ATOM   4019  OE2 GLU A 282      47.177  21.300 -11.542  0.00  0.00           O 0
-ATOM   4011   CB GLU A 282      50.104  21.329  -9.282  0.00  0.00           C 0
-ATOM   1971   CZ ARG A 156      54.374  26.624 -11.152  0.00  0.00           C 0
-ATOM   4018  OE1 GLU A 282      48.887  19.945 -11.284  0.00  0.00           O 0
-ATOM   4060   CB GLN A 285      50.561  26.357  -5.711  0.00  0.00           C 0
-ATOM   4059    O GLN A 285      47.795  27.035  -4.466  0.65  5.36           O 0
-ATOM   1859  CH2 TRP A 149      49.994  30.219  -5.961  0.00  0.00           C 0
-ATOM   1972  NH1 ARG A 156      53.750  27.615 -10.529  0.00  0.00           N 0
-ATOM   4007   CA GLU A 282      50.627  22.066  -8.041  0.00  0.00           C 0
-ATOM   4070  OE1 GLN A 285      52.813  26.714  -7.693  0.73  3.21           O 0
-ATOM   1855  CZ2 TRP A 149      50.818  31.195  -6.441  0.00  0.00           C 0
-ATOM   1927  OE2 GLU A 153      53.911  30.192  -8.505  0.77  5.36           O 0
-ATOM   1969   NE ARG A 156      55.225  25.816 -10.517  0.43  2.19           N 0
-ATOM   4005    N GLU A 282      51.960  21.595  -7.687  0.52  1.09           N 0
+ATOM   4077  OD1 ASN A 286      45.727  25.560  -7.554  0.00  0.00           O 0
+ATOM   4017    O GLU A 282      48.859  22.780  -6.584  0.00  0.00           O 0
+ATOM   4078  ND2 ASN A 286      46.047  23.459  -8.249  0.66  2.19           N 0
+ATOM   4010   CG GLU A 282      48.704  21.733  -9.733  0.00  0.00           C 0
+ATOM   4013   CD GLU A 282      48.217  20.939 -10.938  0.00  0.00           C 0
+ATOM   1971  NH2 ARG A 156      54.152  26.433 -12.436  0.00  0.00           N 0
+ATOM   4015  OE2 GLU A 282      47.177  21.300 -11.542  0.00  0.00           O 0
+ATOM   4007   CB GLU A 282      50.104  21.329  -9.282  0.00  0.00           C 0
+ATOM   1967   CZ ARG A 156      54.374  26.624 -11.152  0.00  0.00           C 0
+ATOM   4014  OE1 GLU A 282      48.887  19.945 -11.284  0.00  0.00           O 0
+ATOM   4056   CB GLN A 285      50.561  26.357  -5.711  0.00  0.00           C 0
+ATOM   4068    O GLN A 285      47.795  27.035  -4.466  0.65  5.36           O 0
+ATOM   1855  CH2 TRP A 149      49.994  30.219  -5.961  0.00  0.00           C 0
+ATOM   1968  NH1 ARG A 156      53.750  27.615 -10.529  0.00  0.00           N 0
+ATOM   4005   CA GLU A 282      50.627  22.066  -8.041  0.00  0.00           C 0
+ATOM   4063  OE1 GLN A 285      52.813  26.714  -7.693  0.73  3.21           O 0
+ATOM   1853  CZ2 TRP A 149      50.818  31.195  -6.441  0.00  0.00           C 0
+ATOM   1923  OE2 GLU A 153      53.911  30.192  -8.505  0.55  5.36           O 0
+ATOM   1965   NE ARG A 156      55.225  25.816 -10.517  0.43  2.19           N 0
+ATOM   4003    N GLU A 282      51.960  21.595  -7.687  0.52  1.09           N 0
 TER
 END

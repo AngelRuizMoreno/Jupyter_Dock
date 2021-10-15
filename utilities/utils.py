@@ -6,7 +6,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem,rdFMCS, Draw
 
 from pdbfixer import PDBFixer
-from simtk.openmm.app import PDBFile
+from openmm.app import PDBFile
 
 import MDAnalysis as mda
 from MDAnalysis.coordinates import PDB

@@ -12,31 +12,31 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 3.0000
 HEADER 7  - Polarity Score                    :     7
 HEADER 8  - Amino Acid based volume Score     : 3.7000
-HEADER 9  - Pocket volume (Monte Carlo)       : 405.1931
+HEADER 9  - Pocket volume (Monte Carlo)       : 400.5255
 HEADER 10  -Pocket volume (convex hull)       : 28.4538
 HEADER 11 - Charge Score                      :    -2
 HEADER 12 - Local hydrophobic density Score   : 6.0000
 HEADER 13 - Number of apolar alpha sphere     :     7
 HEADER 14 - Proportion of apolar alpha sphere : 0.2917
-ATOM   3065  OD1 ASP A 724      46.153  32.212  27.749  0.51  4.29           O 0
-ATOM   2336    N SER A 679      48.028  33.224  30.990  0.00  0.00           N 0
-ATOM   2314    O ASP A 677      51.800  32.197  31.416  0.00  0.00           O 0
-ATOM   2062  ND2 ASN A 662      48.724  35.184  26.735  0.58  5.47           N 0
-ATOM   3092   CB ALA A 726      47.159  29.101  25.537  0.00  0.00           C 0
-ATOM   2323   CA GLU A 678      49.357  32.264  32.790  0.00  0.00           C 0
-ATOM   2330   CG GLU A 678      49.342  30.220  34.289  0.00  0.00           C 0
-ATOM   3066  OD2 ASP A 724      46.266  32.320  25.541  0.45  5.36           O 0
-ATOM   2058   CB ASN A 662      51.167  35.340  26.490  0.00  0.00           C 0
-ATOM   2137  CD1 ILE A 666      54.553  33.403  29.291  0.00  0.00           C 0
-ATOM   2082  OE1 GLN A 663      55.774  31.380  25.540  0.00  0.00           O 0
-ATOM   3111  CD2 LEU A 727      43.556  28.553  29.633  0.00  0.00           C 0
-ATOM   2345   OG SER A 679      45.339  32.517  30.303  0.70  4.29           O 0
-ATOM   2327   CB GLU A 678      48.633  31.494  33.897  0.00  0.00           C 0
-ATOM   2334  OE1 GLU A 678      47.381  29.586  35.543  0.48  7.50           O 0
-ATOM   3167   CD LYS A 730      44.156  23.983  29.859  0.00  0.00           C 0
-ATOM   3091    O ALA A 726      44.916  26.762  25.534  0.44  7.50           O 0
-ATOM   3173   NZ LYS A 730      44.004  25.731  31.795  0.00  0.00           N 0
-ATOM   2333   CD GLU A 678      48.626  29.448  35.390  0.00  0.00           C 0
-ATOM   2335  OE2 GLU A 678      49.317  28.693  36.111  0.37  9.64           O 0
+ATOM   2303    O ASP A 677      51.800  32.197  31.416  0.00  0.00           O 0
+ATOM   2074  OE1 GLN A 663      55.774  31.380  25.540  0.00  0.00           O 0
+ATOM   2053   CB ASN A 662      51.167  35.340  26.490  0.00  0.00           C 0
+ATOM   2132  CD1 ILE A 666      54.553  33.403  29.291  0.00  0.00           C 0
+ATOM   3046  OD1 ASP A 724      46.153  32.212  27.749  0.51  4.29           O 0
+ATOM   3092  CD2 LEU A 727      43.556  28.553  29.633  0.00  0.00           C 0
+ATOM   3073   CB ALA A 726      47.159  29.101  25.537  0.00  0.00           C 0
+ATOM   2319    N SER A 679      48.028  33.224  30.990  0.00  0.00           N 0
+ATOM   2326   OG SER A 679      45.339  32.517  30.303  0.70  4.29           O 0
+ATOM   2058  ND2 ASN A 662      48.724  35.184  26.735  0.58  5.47           N 0
+ATOM   3047  OD2 ASP A 724      46.266  32.320  25.541  0.45  5.36           O 0
+ATOM   2311   CG GLU A 678      49.342  30.220  34.289  0.00  0.00           C 0
+ATOM   2308   CB GLU A 678      48.633  31.494  33.897  0.00  0.00           C 0
+ATOM   3148   CD LYS A 730      44.156  23.983  29.859  0.00  0.00           C 0
+ATOM   3078    O ALA A 726      44.916  26.762  25.534  0.44  7.50           O 0
+ATOM   3154   NZ LYS A 730      44.004  25.731  31.795  0.00  0.00           N 0
+ATOM   2315  OE1 GLU A 678      47.381  29.586  35.543  0.70  7.50           O 0
+ATOM   2306   CA GLU A 678      49.357  32.264  32.790  0.00  0.00           C 0
+ATOM   2314   CD GLU A 678      48.626  29.448  35.390  0.00  0.00           C 0
+ATOM   2316  OE2 GLU A 678      49.317  28.693  36.111  0.00  0.00           O 0
 TER
 END

@@ -3,46 +3,45 @@ HEADER This is a pdb format file writen by the programm fpocket.
 HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
 HEADER                                                                           
 HEADER Information about the pocket    11:
-HEADER 0  - Pocket Score                      : 0.0195
-HEADER 1  - Drug Score                        : 0.0123
-HEADER 2  - Number of alpha spheres           :    37
-HEADER 3  - Mean alpha-sphere radius          : 3.9277
-HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5238
+HEADER 0  - Pocket Score                      : 0.0774
+HEADER 1  - Drug Score                        : 0.0024
+HEADER 2  - Number of alpha spheres           :    31
+HEADER 3  - Mean alpha-sphere radius          : 4.0740
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5423
 HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : 57.5000
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 4.8750
-HEADER 9  - Pocket volume (Monte Carlo)       : 395.1988
-HEADER 10  -Pocket volume (convex hull)       : 43.9772
+HEADER 9  - Pocket volume (Monte Carlo)       : 439.8492
+HEADER 10  -Pocket volume (convex hull)       : 35.8723
 HEADER 11 - Charge Score                      :     0
-HEADER 12 - Local hydrophobic density Score   : 18.0000
-HEADER 13 - Number of apolar alpha sphere     :    20
-HEADER 14 - Proportion of apolar alpha sphere : 0.5405
-ATOM   2970   CZ TYR A 209      28.200  25.946 -12.895  0.00  0.00           C 0
-ATOM   2971   OH TYR A 209      27.465  25.290 -13.860  0.76  6.43           O 0
-ATOM   2968  CE2 TYR A 209      29.386  25.384 -12.450  0.00  0.00           C 0
-ATOM   2763   CG MET A 196      25.674  20.237 -12.733  0.00  0.00           C 0
-ATOM   2934  CD2 LEU A 207      21.873  25.338  -8.339  0.00  0.00           C 0
-ATOM   2905    O ILE A 206      26.918  25.597  -7.733  0.41  4.29           O 0
-ATOM   2921   CA LEU A 207      24.541  26.990  -7.958  0.00  0.00           C 0
-ATOM   2924    O LEU A 207      25.259  28.424  -9.714  0.38  7.50           O 0
-ATOM   2925   CB LEU A 207      23.086  27.447  -7.750  0.00  0.00           C 0
-ATOM   3496   CG TYR A 244      17.925  25.783 -10.556  0.00  0.00           C 0
-ATOM   2966  CE1 TYR A 209      27.764  27.158 -12.378  0.00  0.00           C 0
-ATOM   2951  OD1 ASN A 208      24.901  32.188  -7.794  0.65  9.64           O 0
-ATOM   3566   CB SER A 248      19.188  31.790  -6.707  0.00  0.00           C 0
-ATOM   3499  CD2 TYR A 244      17.860  25.323 -11.875  0.00  0.00           C 0
-ATOM   3503  CE2 TYR A 244      18.383  24.072 -12.232  0.00  0.00           C 0
-ATOM   3569   OG SER A 248      18.022  31.725  -7.505  0.81  5.36           O 0
-ATOM   2930  CD1 LEU A 207      20.766  27.083  -6.919  0.00  0.00           C 0
-ATOM   2754    N MET A 196      25.981  19.808  -9.871  0.07  6.56           N 0
-ATOM   3493   CB TYR A 244      17.362  27.145 -10.167  0.00  0.00           C 0
-ATOM   2853  CD1 LEU A 202      22.358  21.384  -7.567  0.00  0.00           C 0
-ATOM   2911  CG2 ILE A 206      26.469  23.047  -6.152  0.00  0.00           C 0
-ATOM   3492    O TYR A 244      17.050  29.210  -7.642  0.00  0.00           O 0
-ATOM   3506   OH TYR A 244      19.507  22.040 -11.576  0.56  9.64           O 0
-ATOM   2767   CE MET A 196      23.728  21.487 -14.345  0.00  0.00           C 0
-ATOM   3505   CZ TYR A 244      18.979  23.278 -11.261  0.00  0.00           C 0
-ATOM   2756   CA MET A 196      24.776  19.229 -10.460  0.00  0.00           C 0
+HEADER 12 - Local hydrophobic density Score   : 11.0000
+HEADER 13 - Number of apolar alpha sphere     :    12
+HEADER 14 - Proportion of apolar alpha sphere : 0.3871
+ATOM   2909   OH TYR A 209      27.465  25.290 -13.860  0.00  0.00           O 0
+ATOM   2862    O ILE A 206      26.918  25.597  -7.733  0.46  4.29           O 0
+ATOM   2908   CZ TYR A 209      28.200  25.946 -12.895  0.00  0.00           C 0
+ATOM   2906  CE1 TYR A 209      27.764  27.158 -12.378  0.00  0.00           C 0
+ATOM   2865   CA LEU A 207      24.541  26.990  -7.958  0.00  0.00           C 0
+ATOM   2881    O LEU A 207      25.259  28.424  -9.714  0.38  7.50           O 0
+ATOM   3443   CZ TYR A 244      18.979  23.278 -11.261  0.00  0.00           C 0
+ATOM   3448  CE2 TYR A 244      18.383  24.072 -12.232  0.00  0.00           C 0
+ATOM   3444   OH TYR A 244      19.507  22.040 -11.576  0.41  8.57           O 0
+ATOM   2709    N MET A 196      25.981  19.808  -9.871  0.07  7.66           N 0
+ATOM   2795  CD1 LEU A 202      22.358  21.384  -7.567  0.00  0.00           C 0
+ATOM   2850  CG2 ILE A 206      26.469  23.047  -6.152  0.00  0.00           C 0
+ATOM   2913  CE2 TYR A 209      29.386  25.384 -12.450  0.00  0.00           C 0
+ATOM   3438   CG TYR A 244      17.925  25.783 -10.556  0.00  0.00           C 0
+ATOM   2867   CB LEU A 207      23.086  27.447  -7.750  0.00  0.00           C 0
+ATOM   3435   CB TYR A 244      17.362  27.145 -10.167  0.00  0.00           C 0
+ATOM   2872  CD1 LEU A 207      20.766  27.083  -6.919  0.00  0.00           C 0
+ATOM   3511   OG SER A 248      18.022  31.725  -7.505  0.64  5.36           O 0
+ATOM   3508   CB SER A 248      19.188  31.790  -6.707  0.00  0.00           C 0
+ATOM   2890  OD1 ASN A 208      24.901  32.188  -7.794  0.00  0.00           O 0
+ATOM   3451    O TYR A 244      17.050  29.210  -7.642  0.00  0.00           O 0
+ATOM   2876  CD2 LEU A 207      21.873  25.338  -8.339  0.00  0.00           C 0
+ATOM   3446  CD2 TYR A 244      17.860  25.323 -11.875  0.00  0.00           C 0
+ATOM   2710   CA MET A 196      24.776  19.229 -10.460  0.00  0.00           C 0
+ATOM   2712   CB MET A 196      24.936  19.128 -11.978  0.00  0.00           C 0
 TER
 END

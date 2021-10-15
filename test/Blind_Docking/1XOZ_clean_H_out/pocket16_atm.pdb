@@ -12,25 +12,25 @@ HEADER 5  - Mean B-factor of pocket residues  : 0.0000
 HEADER 6  - Hydrophobicity Score              : -6.8000
 HEADER 7  - Polarity Score                    :     4
 HEADER 8  - Amino Acid based volume Score     : 3.6000
-HEADER 9  - Pocket volume (Monte Carlo)       : 292.2764
+HEADER 9  - Pocket volume (Monte Carlo)       : 288.5507
 HEADER 10  -Pocket volume (convex hull)       : 12.0550
 HEADER 11 - Charge Score                      :     0
 HEADER 12 - Local hydrophobic density Score   : 2.0000
 HEADER 13 - Number of apolar alpha sphere     :     3
 HEADER 14 - Proportion of apolar alpha sphere : 0.1875
-ATOM    266   CA GLN A 552      19.278  47.990   9.881  0.00  0.00           C 0
-ATOM    273   CG GLN A 552      17.663  47.698   7.927  0.00  0.00           C 0
-ATOM    367  OG1 THR A 557      21.174  43.338  12.565  0.00  0.00           O 0
-ATOM    270   CB GLN A 552      17.831  48.100   9.415  0.00  0.00           C 0
-ATOM    264    N GLN A 552      19.358  48.219  11.327  0.69  2.19           N 0
-ATOM    269    O GLN A 552      20.915  48.607   8.228  0.52  4.29           O 0
-ATOM    332   NZ LYS A 555      23.873  48.629   3.832  0.00  0.00           N 0
-ATOM    277  NE2 GLN A 552      16.269  48.301   6.061  0.00  0.00           N 0
-ATOM    380  OD2 ASP A 558      24.749  43.725   6.232  0.43  8.57           O 0
-ATOM    379  OD1 ASP A 558      23.289  42.567   7.410  0.00  0.00           O 0
-ATOM    361   CB THR A 557      21.792  42.356  11.706  0.00  0.00           C 0
-ATOM    259    O ALA A 551      21.569  47.812  11.341  0.00  0.00           O 0
-ATOM    316   CA LYS A 555      24.249  46.957   8.925  0.00  0.00           C 0
-ATOM    323   CG LYS A 555      24.643  48.102   6.667  0.00  0.00           C 0
+ATOM    263   CA GLN A 552      19.278  47.990   9.881  0.00  0.00           C 0
+ATOM    268   CG GLN A 552      17.663  47.698   7.927  0.00  0.00           C 0
+ATOM    358  OG1 THR A 557      21.174  43.338  12.565  0.00  0.00           O 0
+ATOM    265   CB GLN A 552      17.831  48.100   9.415  0.00  0.00           C 0
+ATOM    261    N GLN A 552      19.358  48.219  11.327  0.69  2.19           N 0
+ATOM    277    O GLN A 552      20.915  48.607   8.228  0.58  4.29           O 0
+ATOM    327   NZ LYS A 555      23.873  48.629   3.832  0.00  0.00           N 0
+ATOM    273  NE2 GLN A 552      16.269  48.301   6.061  0.00  0.00           N 0
+ATOM    374  OD1 ASP A 558      23.289  42.567   7.410  0.00  0.00           O 0
+ATOM    375  OD2 ASP A 558      24.749  43.725   6.232  0.54  8.57           O 0
+ATOM    313   CA LYS A 555      24.249  46.957   8.925  0.00  0.00           C 0
+ATOM    260    O ALA A 551      21.569  47.812  11.341  0.00  0.00           O 0
+ATOM    356   CB THR A 557      21.792  42.356  11.706  0.00  0.00           C 0
+ATOM    318   CG LYS A 555      24.643  48.102   6.667  0.00  0.00           C 0
 TER
 END
