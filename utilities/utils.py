@@ -3,7 +3,7 @@ from pymol import cmd
 from openbabel import pybel
 
 from rdkit import Chem
-from rdkit.Chem import AllChem,rdFMCS, Draw
+from rdkit.Chem import AllChem,rdFMCS, rdMolAlign
 
 from pdbfixer import PDBFixer
 from openmm.app import PDBFile
@@ -11,7 +11,9 @@ from openmm.app import PDBFile
 import MDAnalysis as mda
 from MDAnalysis.coordinates import PDB
 
-import random
+import random, math
+
+import numpy as np
 
 def getbox(selection='sele', extending = 6.0, software='vina'):
     
@@ -156,6 +158,63 @@ def pdbqt_to_sdf(pdbqt_file=None,output=None):
 
         out.write(pose)
     out.close()
+
+
+def get_inplace_rmsd (ref,target):
+    
+    r=rdFMCS.FindMCS([ref,target])
+    
+    a=ref.GetSubstructMatch(Chem.MolFromSmarts(r.smartsString))
+    b=target.GetSubstructMatch(Chem.MolFromSmarts(r.smartsString))   
+    amap=list(zip(a,b))
+    
+    distances=[]
+    for atomA, atomB in amap:
+        pos_A=ref.GetConformer().GetAtomPosition (atomA)
+        pos_B=target.GetConformer().GetAtomPosition (atomB)
+        coord_A=np.array((pos_A.x,pos_A.y,pos_A.z))
+        coord_B=np.array ((pos_B.x,pos_B.y,pos_B.z))
+        dist_numpy = np.linalg.norm(coord_A-coord_B)        
+        distances.append(dist_numpy)
+        
+    rmsd=math.sqrt(1/len(distances)*sum([i*i for i in distances]))
+    
+    return rmsd
+
+def get_scaffold_based_conformers(smiles=None, anchor=None, num_confs=None, output=None, rmsd_threshold=0.75):
+    mol = Chem.MolFromSmiles(smiles,sanitize=True)
+    mol=Chem.AddHs(mol)
+    AllChem.EmbedMolecule(mol)
+
+    constrain = Chem.SDMolSupplier(anchor,sanitize=True)[0]
+
+    r = rdFMCS.FindMCS([mol, constrain])
+    a = mol.GetSubstructMatch(Chem.MolFromSmarts(r.smartsString))
+    b = constrain.GetSubstructMatch(Chem.MolFromSmarts(r.smartsString))
+    amap = list(zip(a, b))
+    coors = dict()
+
+    for a,b in amap:
+        coors[a] = constrain.GetConformer().GetAtomPosition(b)
+
+    w = Chem.SDWriter(output)
+
+    mol.UpdatePropertyCache()
+    constrain.UpdatePropertyCache()
+
+    confs = AllChem.EmbedMultipleConfs(mol,
+        numConfs=int(num_confs),
+        coordMap=coors,
+        pruneRmsThresh=0.75,
+        useExpTorsionAnglePrefs=True,
+        useBasicKnowledge=True)
+
+    for element in confs:
+        Chem.SanitizeMol(mol)
+        rmsd = AllChem.GetBestRMS(mol,constrain,element,0,map=[list(amap)])
+        if rmsd<=float(rmsd_threshold):
+            w.write(mol, confId=element)
+    w.close()
 
 '''
 def get_3D_view (receptor_file='',rec_opts={'format':'pdb'},docking_results='',refMol='',refMol_opts={'format':'mol2'},pose=[0]):

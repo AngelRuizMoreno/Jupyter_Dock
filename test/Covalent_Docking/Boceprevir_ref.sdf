@@ -1,0 +1,167 @@
+6ZRU
+  PyMOL2.5          3D                             0
+
+ 37 39  0  0  0  0  0  0  0  0999 V2000
+  -13.0560  -10.4130   15.5190 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.1540  -10.4520   16.0090 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -15.2490  -11.2420   15.4100 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -16.4030  -10.6090   15.8780 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -15.3030  -12.7160   15.8720 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.1910  -13.6520   15.3850 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.1250  -14.9230   16.2340 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.0950  -14.7710   17.7680 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -13.1200  -15.9500   17.8240 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -12.8000  -15.7030   16.3360 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -16.6170  -13.3020   15.5410 N   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.5560  -13.5410   16.4650 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -18.8560  -14.1280   15.9590 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.0020  -13.2440   16.3720 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.7320  -13.9500   17.5010 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -21.4230  -13.7060   16.1670 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.5310  -12.6670   16.1940 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -21.6840  -14.8600   15.2100 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.0920  -15.2920   17.7370 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -19.1030  -15.3850   16.6520 N   0  0  0  0  0  0  0  0  0  0  0  0
+  -18.4010  -16.4530   16.2520 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -18.6260  -17.7500   17.0270 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.4470  -18.1890   17.9050 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -16.1950  -18.5550   17.1090 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.8330  -19.4260   18.7230 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.1110  -17.0350   18.8460 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -19.0320  -18.7790   16.0950 N   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.1710  -19.4910   16.2570 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.4380  -20.3500   15.2540 N   0  0  0  0  0  0  0  0  0  0  0  0
+  -21.6890  -21.1150   15.0550 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.0470  -21.8650   16.3350 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -21.4510  -22.1140   13.9200 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -22.7750  -20.1030   14.6890 C   0  0  0  0  0  0  0  0  0  0  0  0
+  -20.8860  -19.3610   17.2600 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.5890  -16.3610   15.3350 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -17.4390  -13.2930   17.6640 O   0  0  0  0  0  0  0  0  0  0  0  0
+  -14.4750   -9.6850   17.2050 N   0  3  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2 37  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  3  5  1  0  0  0  0
+  5  6  1  0  0  0  0
+  6  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  7 10  1  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  1  0  0  0  0
+  5 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+ 12 36  2  0  0  0  0
+ 12 13  1  0  0  0  0
+ 13 14  1  0  0  0  0
+ 14 15  1  0  0  0  0
+ 14 16  1  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  1  0  0  0  0
+ 16 18  1  0  0  0  0
+ 15 19  1  0  0  0  0
+ 13 20  1  0  0  0  0
+ 19 20  1  0  0  0  0
+ 20 21  1  0  0  0  0
+ 21 35  2  0  0  0  0
+ 21 22  1  0  0  0  0
+ 22 23  1  0  0  0  0
+ 23 24  1  0  0  0  0
+ 23 25  1  0  0  0  0
+ 23 26  1  0  0  0  0
+ 22 27  1  0  0  0  0
+ 27 28  1  0  0  0  0
+ 28 29  1  0  0  0  0
+ 28 34  2  0  0  0  0
+ 29 30  1  0  0  0  0
+ 30 31  1  0  0  0  0
+ 30 32  1  0  0  0  0
+ 30 33  1  0  0  0  0
+M  END
+>  <pdb_header>
+HEADER    VIRAL PROTEIN                           14-JUL-20   XXXX              
+TITLE     CRYSTAL STRUCTURE OF SARS COV2 MAIN PROTEASE IN COMPLEX WITH INHIBITOR
+TITLE    2 BOCEPREVIR                                                           
+KEYWDS    PROTEASE, BOCEPREVIR, INHIBITOR, VIRAL PROTEIN                        
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    R.OERLEMANS,W.WANG,S.LUNEV,A.DOMLING,M.R.GROVES                       
+JRNL        AUTH   R.OERLEMANS,A.J.RUIZ-MORENO,Y.CONG,N.DINESH KUMAR,           
+JRNL        AUTH 2 M.A.VELASCO-VELAZQUEZ,C.G.NEOCHORITIS,J.SMITH,F.REGGIORI,    
+JRNL        AUTH 3 M.R.GROVES,A.DOMLING                                         
+JRNL        TITL   REPURPOSING THE HCV NS3-4A PROTEASE DRUG BOCEPREVIR AS       
+JRNL        TITL 2 COVID-19 THERAPEUTICS.                                       
+JRNL        REF    RSC MED CHEM                  V.  12   370 2020              
+JRNL        REFN                   ESSN 2632-8682                               
+JRNL        PMID   34041486                                                     
+JRNL        DOI    10.1039/D0MD00367K                                           
+SEQRES   1 A  306  SER GLY PHE ARG LYS MET ALA PHE PRO SER GLY LYS VAL          
+SEQRES   2 A  306  GLU GLY CYS MET VAL GLN VAL THR CYS GLY THR THR THR          
+SEQRES   3 A  306  LEU ASN GLY LEU TRP LEU ASP ASP VAL VAL TYR CYS PRO          
+SEQRES   4 A  306  ARG HIS VAL ILE CYS THR SER GLU ASP MET LEU ASN PRO          
+SEQRES   5 A  306  ASN TYR GLU ASP LEU LEU ILE ARG LYS SER ASN HIS ASN          
+SEQRES   6 A  306  PHE LEU VAL GLN ALA GLY ASN VAL GLN LEU ARG VAL ILE          
+SEQRES   7 A  306  GLY HIS SER MET GLN ASN CYS VAL LEU LYS LEU LYS VAL          
+SEQRES   8 A  306  ASP THR ALA ASN PRO LYS THR PRO LYS TYR LYS PHE VAL          
+SEQRES   9 A  306  ARG ILE GLN PRO GLY GLN THR PHE SER VAL LEU ALA CYS          
+SEQRES  10 A  306  TYR ASN GLY SER PRO SER GLY VAL TYR GLN CYS ALA MET          
+SEQRES  11 A  306  ARG PRO ASN PHE THR ILE LYS GLY SER PHE LEU ASN GLY          
+SEQRES  12 A  306  SER CYS GLY SER VAL GLY PHE ASN ILE ASP TYR ASP CYS          
+SEQRES  13 A  306  VAL SER PHE CYS TYR MET HIS HIS MET GLU LEU PRO THR          
+SEQRES  14 A  306  GLY VAL HIS ALA GLY THR ASP LEU GLU GLY ASN PHE TYR          
+SEQRES  15 A  306  GLY PRO PHE VAL ASP ARG GLN THR ALA GLN ALA ALA GLY          
+SEQRES  16 A  306  THR ASP THR THR ILE THR VAL ASN VAL LEU ALA TRP LEU          
+SEQRES  17 A  306  TYR ALA ALA VAL ILE ASN GLY ASP ARG TRP PHE LEU ASN          
+SEQRES  18 A  306  ARG PHE THR THR THR LEU ASN ASP PHE ASN LEU VAL ALA          
+SEQRES  19 A  306  MET LYS TYR ASN TYR GLU PRO LEU THR GLN ASP HIS VAL          
+SEQRES  20 A  306  ASP ILE LEU GLY PRO LEU SER ALA GLN THR GLY ILE ALA          
+SEQRES  21 A  306  VAL LEU ASP MET CYS ALA SER LEU LYS GLU LEU LEU GLN          
+SEQRES  22 A  306  ASN GLY MET ASN GLY ARG THR ILE LEU GLY SER ALA LEU          
+SEQRES  23 A  306  LEU GLU ASP GLU PHE THR PRO PHE ASP VAL VAL ARG GLN          
+SEQRES  24 A  306  CYS SER GLY VAL THR PHE GLN                                  
+HETNAM     DMS DIMETHYL SULFOXIDE                                               
+HETNAM     U5G BOCEPREVIR (BOUND FORM)                                          
+HETSYN     U5G (1R,2S,5S)-N-[(2S,3R)-4-AMINO-1-CYCLOBUTYL-3-HYDROXY-4-          
+HETSYN   2 U5G  OXOBUTAN-2-YL]-3-[N-(TERT-BUTYLCARBAMOYL)-3-METHYL-L-           
+HETSYN   3 U5G  VALYL]-6,6-DIMETHYL-3-AZABICYCLO[3.1.0]HEXANE-2-                
+HETSYN   4 U5G  CARBOXAMIDE                                                     
+FORMUL   2  DMS    2(C2 H6 O S)                                                 
+FORMUL   4  U5G    C27 H47 N5 O5                                                
+FORMUL   5  HOH   *23(H2 O)                                                     
+HELIX    1 AA1 SER A   10  GLY A   15  1                                   6    
+HELIX    2 AA2 HIS A   41  CYS A   44  5                                   4    
+HELIX    3 AA3 GLU A   47  ASN A   51  5                                   5    
+HELIX    4 AA4 ASN A   53  ARG A   60  1                                   8    
+HELIX    5 AA5 LYS A   61  PHE A   66  5                                   6    
+HELIX    6 AA6 ILE A  200  ASN A  214  1                                  15    
+HELIX    7 AA7 THR A  226  TYR A  237  1                                  12    
+HELIX    8 AA8 THR A  243  LEU A  250  1                                   8    
+HELIX    9 AA9 LEU A  250  GLY A  258  1                                   9    
+HELIX   10 AB1 ALA A  260  GLY A  275  1                                  16    
+HELIX   11 AB2 THR A  292  GLY A  302  1                                  11    
+SHEET    1 AA1 7 VAL A  73  LEU A  75  0                                        
+SHEET    2 AA1 7 LEU A  67  ALA A  70 -1  N  ALA A  70   O  VAL A  73           
+SHEET    3 AA1 7 MET A  17  CYS A  22 -1  N  THR A  21   O  LEU A  67           
+SHEET    4 AA1 7 THR A  25  LEU A  32 -1  O  LEU A  27   N  VAL A  20           
+SHEET    5 AA1 7 VAL A  35  PRO A  39 -1  O  TYR A  37   N  LEU A  30           
+SHEET    6 AA1 7 VAL A  86  VAL A  91 -1  O  LEU A  89   N  VAL A  36           
+SHEET    7 AA1 7 VAL A  77  GLN A  83 -1  N  ILE A  78   O  LYS A  90           
+SHEET    1 AA2 5 TYR A 101  PHE A 103  0                                        
+SHEET    2 AA2 5 CYS A 156  LEU A 167  1  O  PHE A 159   N  LYS A 102           
+SHEET    3 AA2 5 VAL A 148  ASP A 153 -1  N  ASP A 153   O  CYS A 156           
+SHEET    4 AA2 5 THR A 111  TYR A 118 -1  N  SER A 113   O  PHE A 150           
+SHEET    5 AA2 5 SER A 121  ALA A 129 -1  O  CYS A 128   N  PHE A 112           
+SHEET    1 AA3 3 TYR A 101  PHE A 103  0                                        
+SHEET    2 AA3 3 CYS A 156  LEU A 167  1  O  PHE A 159   N  LYS A 102           
+SHEET    3 AA3 3 VAL A 171  THR A 175 -1  O  VAL A 171   N  LEU A 167           
+LINK         SG  CYS A 145                 C03 U5G A 503     1555   1555  1.83  
+CRYST1  113.763   53.535   45.876  90.00 101.52  90.00 I 1 2 1       4          
+ORIGX1      1.000000  0.000000  0.000000        0.00000                         
+ORIGX2      0.000000  1.000000  0.000000        0.00000                         
+ORIGX3      0.000000  0.000000  1.000000        0.00000                         
+SCALE1      0.008790  0.000000  0.001792        0.00000                         
+SCALE2      0.000000  0.018679  0.000000        0.00000                         
+SCALE3      0.000000  0.000000  0.022246        0.00000                         
+
+
+$$$$
