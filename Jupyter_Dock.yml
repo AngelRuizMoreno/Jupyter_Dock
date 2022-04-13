@@ -212,7 +212,7 @@ dependencies:
     - griddataformats==0.5.0
     - gsd==2.4.2
     - joblib==1.0.1
-    - mdanalysis==2.0.0.dev0
+    - mdanalysis==2.0.0
     - meeko==0.1.dev3
     - mmtf-python==1.1.2
     - msgpack==1.0.2
