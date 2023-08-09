@@ -15,7 +15,35 @@ import random, math
 
 import numpy as np
 
-def getbox(selection='sele', extending = 6.0, software='vina'):
+__all__=['get_docking_box','sanitize_protein','generate_ledock_file','dok_to_sdf', 'pdbqt_to_sdf','compute_inplace_rmsd', 'get_scaffold_based_conformers']
+
+def get_docking_box(selection='sele', extending = 6.0, software='vina'):
+    """
+    Calculates the docking box for a given pymol selection: atom(s), residue(s), molecule(s).
+
+    Parameters
+    ----------
+    selection : str, optional
+        The name of the selection of molecules in PyMOL. The default is 'sele'.
+    extending : float, optional
+        The amount to extend the docking box from the minimum and maximum coordinates of the selection. The default is 6.0.
+    software : str, optional
+        The software to use for docking. The options are 'vina', 'ledock', or 'both'. The default is 'vina'.
+
+    Returns
+    -------
+    dict or tuple
+        The format of the docking box depending on the software parameter.
+        If software is 'vina', it returns a dictionary with keys 'center_x', 'center_y', 'center_z' for the center coordinates, and another dictionary with keys 'size_x', 'size_y', 'size_z' for the size of the docking box.
+        If software is 'ledock', it returns three tuples, each containing two values for the minimum and maximum coordinates of the docking box in x, y, and z axes, respectively.
+        If software is 'both', it returns both formats as a tuple of two elements.
+        If software is not one of the options, it prints an error message and returns None.
+
+    Example
+    -------
+    >>> get_docking_box(selection='ligand', extending=4.0, software='both')
+    (({'center_x': 10.5, 'center_y': 20.0, 'center_z': 30.5}, {'size_x': 12.0, 'size_y': 16.0, 'size_z': 20.0}), ({'minX': 4.5, 'maxX': 16.5}, {'minY': 12.0, 'maxY': 28.0}, {'minZ': 20.5, 'maxZ': 40.5}))
+    """
     
     ([minX, minY, minZ],[maxX, maxY, maxZ]) = cmd.get_extent(selection)
 
@@ -46,7 +74,29 @@ def getbox(selection='sele', extending = 6.0, software='vina'):
         print('software options must be "vina", "ledock" or "both"')
 
 
-def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
+def sanitize_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
+    """
+    Sanitizes a protein structure file by using PDBFixer and MDAnalysis.
+
+    Parameters
+    ----------
+    filename : str
+        The name of the input file in PDB format.
+    addHs_pH : float, optional
+        The pH value for adding missing hydrogens to the protein. The default is 7.4.
+    output : str
+        The name of the output file in PDB format.
+    try_renumberResidues : bool, optional
+        Whether to try to renumber the residues in the output file according to the original file. The default is False.
+
+    Returns
+    -------
+    None
+
+    Example
+    -------
+    >>> sanitize_protein(filename='1a2b.pdb', output='1a2b_fixed.pdb', try_renumberResidues=True)
+    """
 
     fix = PDBFixer(filename=filename)
     fix.findMissingResidues()
@@ -71,10 +121,43 @@ def fix_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=False):
             save.write(from_fix)
             save.close()
         except Exception:
-            print('Not possible to renumber residues, check excepton for extra details')
+            print('Not possible to renumber residues, check exception for extra details')
         
 
-def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_poses=10, l_list=[],l_list_outfile='',out='dock.in'):
+def generate_ledock_file(receptor:str='pro.pdb',rmsd:float=1.0,x:list=[0,0],y:list=[0,0],z:list=[0,0], n_poses:int=10, l_list:list=[],l_list_outfile:str='',out:str='dock.in'):
+     """
+    Generates an input file for LeDock docking program.
+
+    Parameters
+    ----------
+    receptor : str
+        The name of the receptor file in PDB format. The default is 'pro.pdb'.
+    rmsd : float, optional
+        The root mean square deviation threshold for clustering the docking poses. The default is 1.0.
+    x : list, optional
+        The minimum and maximum coordinates of the binding pocket in x axis. The default is [0,0].
+    y : list, optional
+        The minimum and maximum coordinates of the binding pocket in y axis. The default is [0,0].
+    z : list, optional
+        The minimum and maximum coordinates of the binding pocket in z axis. The default is [0,0].
+    n_poses : int, optional
+        The number of binding poses to output. The default is 10.
+    l_list : list
+        The names of the ligand files in MOL2 format.
+    l_list_outfile : str
+        The name of the output file that contains the ligand list.
+    out : str, optional
+        The name of the output file in LEDock format. The default is 'dock.in'.
+
+    Returns
+    -------
+    None
+
+    Example
+    -------
+    >>> generate_ledock_file(receptor='protein.pdb', rmsd=2.0, x=[10,20], y=[15,25], z=[5,15], n_poses=5, l_list=['ligand1.mol2', 'ligand2.mol2'], l_list_outfile='ligands.txt', out='ledock.in')
+    """
+        
     rmsd=str(rmsd)
     x=[str(x) for x in x]
     y=[str(y) for y in y]
@@ -107,19 +190,21 @@ def generate_ledock_file(receptor='pro.pdb',rmsd=1.0,x=[0,0],y=[0,0],z=[0,0], n_
     output.close()
 
 
+def dok_to_sdf (dok_file:str,output:str):
+    '''
+    Description: The function dok_to_sdf converts a DOK file to an SDF file.
 
-def dok_to_sdf (dok_file=None,output=None):
+    Parameters:
 
-    """
-    dok_to_sdf ( dok_file=None, output=None )
+    - dok_file: A string that specifies the name of the input DOK file. A DOK file is a text file that contains the coordinates and properties of a set of molecules in PDB format. If None, the function will raise an exception.
+    - output: A string that specifies the name of the output SDF file. An SDF file is a text file that contains the structure and data of a set of molecules in a standard format. If None, the function will use the same name as the input file with the ‘.sdf’ extension.
+    - Return: The function does not return anything, but it writes the output SDF file to the disk.
 
-    params:
+    Example: To convert a DOK file named ‘example.dok’ to an SDF file named ‘example.sdf’, you can call the function as follows:
 
-    dok_file: str or path-like ; dok file from ledock docking
+    >>> dok_to_sdf(dok_file='example.dok', output='example.sdf')
+    '''
 
-    output: str or path-like ; outfile from ledock docking, extension must be sdf
-
-   """
     out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
 
     with open(dok_file, 'r') as f:
@@ -146,7 +231,21 @@ def dok_to_sdf (dok_file=None,output=None):
     out.close()
   
 
-def pdbqt_to_sdf(pdbqt_file=None,output=None):
+def pdbqt_to_sdf(pdbqt_file:str,output:str):
+    
+    '''
+    The function pdbqt_to_sdf converts a PDBQT file to an SDF file.
+
+    Parameters:
+    - pdbqt_file: A string that specifies the name of the input PDBQT file. A PDBQT file is a text file that contains the coordinates and properties of a set of molecules in a format suitable for AutoDock Vina. If None, the function will raise an exception.
+    - output: A string that specifies the name of the output SDF file. An SDF file is a text file that contains the structure and data of a set of molecules in a standard format. If None, the function will use the same name as the input file with the ‘.sdf’ extension.
+    
+    Return: The function does not return anything, but it writes the output SDF file to the disk.
+
+    Example: To convert a PDBQT file named ‘example.pdbqt’ to an SDF file named ‘example.sdf’, you can call the function as follows:
+
+    >>> pdbqt_to_sdf(pdbqt_file='example.pdbqt', output='example.sdf')
+    '''
 
     results = [m for m in pybel.readfile(filename=pdbqt_file,format='pdbqt')]
     out=pybel.Outputfile(filename=output,format='sdf',overwrite=True)
@@ -160,7 +259,7 @@ def pdbqt_to_sdf(pdbqt_file=None,output=None):
     out.close()
 
 
-def get_inplace_rmsd (ref,target):
+def compute_inplace_rmsd (ref:Chem.Mol,target:Chem.Mol):
     
     r=rdFMCS.FindMCS([ref,target])
     
@@ -181,7 +280,7 @@ def get_inplace_rmsd (ref,target):
     
     return rmsd
 
-def get_scaffold_based_conformers(smiles=None, anchor=None, num_confs=None, output=None, rmsd_threshold=0.75):
+def get_scaffold_based_conformers(smiles:str, anchor:Chem.Mol, num_confs:int, output:str, rmsd_threshold:int=0.75):
     mol = Chem.MolFromSmiles(smiles,sanitize=True)
     mol=Chem.AddHs(mol)
     AllChem.EmbedMolecule(mol)
