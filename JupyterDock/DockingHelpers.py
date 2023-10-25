@@ -124,8 +124,8 @@ def sanitize_protein(filename='',addHs_pH=7.4,output='',try_renumberResidues=Fal
             print('Not possible to renumber residues, check exception for extra details')
         
 
-def generate_ledock_file(receptor:str='pro.pdb',rmsd:float=1.0,x:list=[0,0],y:list=[0,0],z:list=[0,0], n_poses:int=10, l_list:list=[],l_list_outfile:str='',out:str='dock.in'):
-     """
+def generate_ledock_file(receptor:str='pro.pdb',rmsd:float=1.0,x:list=[0,0],y:list=[0,0],z:list=[0,0], n_poses:int=10, l_list:list=[],l_list_outfile:str='',out:str='dock.in'):    
+    """
     Generates an input file for LeDock docking program.
 
     Parameters

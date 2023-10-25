@@ -1,7 +1,0 @@
--0.035579    gauss(o=0,_w=0.5,_c=8)
--0.005156    gauss(o=3,_w=2,_c=8)
-0.840245     repulsion(o=0,_c=8)
--0.035069    hydrophobic(g=0.5,_b=1.5,_c=8)
--0.587439    non_dir_h_bond(g=-0.7,_b=0,_c=8)
-1.923        num_tors_div
--100.0       atom_type_gaussian(t1=Sulfur,t2=Sulfur,o=0,_w=3,_c=8)
