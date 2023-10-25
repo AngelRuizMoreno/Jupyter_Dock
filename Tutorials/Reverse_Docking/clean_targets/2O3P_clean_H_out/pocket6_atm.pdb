@@ -1,0 +1,47 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : -0.0006
+HEADER 1  - Drug Score                        : 0.0006
+HEADER 2  - Number of alpha spheres           :    28
+HEADER 3  - Mean alpha-sphere radius          : 4.0746
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6722
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 20.4286
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 412.3596
+HEADER 10  -Pocket volume (convex hull)       : 30.2815
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.2857
+ATOM   1971  NH2 ARG A 156      54.152  26.433 -12.436  0.00  0.00           N 0
+ATOM   2028   CG ASN A 160      60.329  25.345 -16.579  0.00  0.00           C 0
+ATOM   2029  OD1 ASN A 160      59.642  24.521 -17.202  0.00  0.00           O 0
+ATOM   2030  ND2 ASN A 160      60.664  26.525 -17.098  0.00  0.00           N 0
+ATOM   1026  CD1 PHE A 100      60.809  34.498 -11.394  0.00  0.00           C 0
+ATOM   1025   CG PHE A 100      62.025  33.842 -11.669  0.00  0.00           C 0
+ATOM   1989  CD2 HSD A 157      62.925  30.293 -13.752  0.00  0.00           C 0
+ATOM   1022   CB PHE A 100      62.819  34.171 -12.917  0.00  0.00           C 0
+ATOM   1980   CB HSD A 157      62.029  29.224 -11.566  0.00  0.00           C 0
+ATOM   2025   CB ASN A 160      60.803  25.073 -15.150  0.00  0.00           C 0
+ATOM   1978   CA HSD A 157      61.709  27.749 -11.840  0.00  0.00           C 0
+ATOM   1975    O ARG A 156      60.562  25.225 -11.874  0.65  3.21           O 0
+ATOM   1976    N HSD A 157      60.854  27.179 -10.805  0.68  1.09           N 0
+ATOM   1925    O GLU A 153      59.469  29.263  -8.978  0.47  2.14           O 0
+ATOM   1030   CZ PHE A 100      60.538  33.194  -9.353  0.00  0.00           C 0
+ATOM   1028  CE1 PHE A 100      60.067  34.183 -10.235  0.00  0.00           C 0
+ATOM   3997  CD2 PHE A 281      57.353  21.297  -7.943  0.00  0.00           C 0
+ATOM   1954   CA ARG A 156      59.513  25.472  -9.729  0.00  0.00           C 0
+ATOM   1956   CB ARG A 156      58.089  26.023  -9.883  0.00  0.00           C 0
+ATOM   2008   CB HSD A 159      61.899  21.752 -10.987  0.00  0.00           C 0
+ATOM   1974    C ARG A 156      60.362  25.950 -10.899  0.00  0.00           C 0
+ATOM   1959   CG ARG A 156      57.074  25.408  -8.940  0.00  0.00           C 0
+ATOM   1922  OE1 GLU A 153      55.483  30.956  -9.816  0.48  8.57           O 0
+ATOM   1967   CZ ARG A 156      54.374  26.624 -11.152  0.00  0.00           C 0
+ATOM   1965   NE ARG A 156      55.225  25.816 -10.517  0.43  2.19           N 0
+TER
+END

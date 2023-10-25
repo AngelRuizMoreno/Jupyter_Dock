@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : -0.0748
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 4.1364
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4899
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 2.1667
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.6667
+HEADER 9  - Pocket volume (Monte Carlo)       : 157.1417
+HEADER 10  -Pocket volume (convex hull)       : 0.9919
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   2956    O ASP A 208     -27.666  -3.567   6.754  0.00  0.00           O 0
+ATOM   3363   CG ARG A 235     -31.134  -5.208   8.222  0.00  0.00           C 0
+ATOM   2954  OD2 ASP A 208     -24.409  -6.475   5.636  0.81  4.29           O 0
+ATOM    560   OG SER A  44     -25.314  -5.942   9.854  0.47  4.29           O 0
+ATOM   3369   NE ARG A 235     -32.225  -7.307   8.049  0.43  1.09           N 0
+ATOM   3371   CZ ARG A 235     -32.106  -8.566   8.475  0.00  0.00           C 0
+ATOM   2949   CB ASP A 208     -25.686  -4.721   4.780  0.00  0.00           C 0
+ATOM   3348    O GLY A 233     -31.441  -5.353   3.586  0.18  5.36           O 0
+ATOM   3375  NH2 ARG A 235     -32.137  -9.552   7.592  0.00  0.00           N 0
+ATOM    547  OE1 GLN A  43     -28.428 -10.603  11.110  0.78  3.21           O 0
+ATOM    552    O GLN A  43     -23.969  -9.825   8.740  0.00  0.00           O 0
+ATOM   3372  NH1 ARG A 235     -32.017  -8.859   9.763  0.79  5.47           N 0
+ATOM    540   CB GLN A  43     -25.782 -10.428  10.945  0.00  0.00           C 0
+ATOM    490  CD2 LEU A  40     -30.282  -6.975  12.334  0.00  0.00           C 0
+TER
+END

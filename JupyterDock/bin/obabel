@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#
+# --- TSRI, Michel Sanner Copyright 2019 ---
+#
+
+######
+## Set some environment variables.
+
+ADS_ROOT="/mnt/c/Users/angel/Desktop/Reverse_docking_vina/ADFRsuite" 
+export ADS_ROOT
+########
+
+PATH="$ADS_ROOT/bin:$PATH"
+export PATH
+
+# Open Babel formats, plugins directory:
+BABEL_LIBDIR="$ADS_ROOT/lib/openbabel/2.4.1"
+export BABEL_LIBDIR
+BABEL_DATADIR="$ADS_ROOT/share/openbabel/2.4.1"
+export BABEL_DATADIR
+
+# set the LD_LIBRARY PATH for each platform
+case "`uname -s`" in
+    Linux)
+	LD_LIBRARY_PATH="$ADS_ROOT/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+	export LD_LIBRARY_PATH
+	;;
+    Darwin*)
+	DYLD_LIBRARY_PATH="$ADS_ROOT/lib${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+	export DYLD_LIBRARY_PATH
+	;;
+esac
+
+obexec="$ADS_ROOT/bin/obabelbin/obabel"
+exec $obexec  $@

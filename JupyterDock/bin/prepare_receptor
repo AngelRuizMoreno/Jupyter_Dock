@@ -1,0 +1,120 @@
+#!/bin/sh
+
+#
+# --- TSRI, Michel Sanner Copyright 2019 ---
+#
+
+######
+## Set some environment variables.
+ADS_ROOT="/mnt/d/Projects/Jupyter_Dock_devel/bin/ADFRsuite" 
+export ADS_ROOT
+
+########
+## plaform we run on
+##
+ADS_ARCHOSV=`$ADS_ROOT/bin/archosv`
+export ADS_ARCHOSV
+
+#######
+## path to the extralibs directory.
+##
+ADS_EXTRALIBS="$ADS_ROOT/lib"
+export ADS_EXTRALIBS
+
+#######
+## path to the extrainclude directory
+ADS_EXTRAINCLUDE="$ADS_ROOT/include"
+export ADS_EXTRAINCLUDE
+
+########
+## add the path to the directory holding the python interpreter to your path
+##
+PATH="$ADS_ROOT/bin:$PATH"
+export PATH
+
+# Open Babel formats, plugins directory:
+BABEL_LIBDIR="$ADS_ROOT/lib/openbabel/2.4.1"
+export BABEL_LIBDIR
+BABEL_DATADIR="$ADS_ROOT/share/openbabel/2.4.1"
+export BABEL_DATADIR
+
+#REDUCE
+REDUCE_HET_DICT="$ADS_ROOT/bin"
+export REDUCE_HET_DICT
+
+# set path so we get the versions of command we expect
+originalpath="$PATH"
+
+# set the LD_LIBRARY PATH for each platform
+case "`uname -s`" in
+    Linux)
+	LD_LIBRARY_PATH="$ADS_ROOT/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+	export LD_LIBRARY_PATH
+	;;
+    Darwin*)
+        # NOTE: the user may have already set DISPLAY, so don't change it    
+        if [ ! "$DISPLAY" ]; then
+            DISPLAY=":0.0"
+            export DISPLAY
+        fi
+	DYLD_LIBRARY_PATH="$ADS_ROOT/lib${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+	export DYLD_LIBRARY_PATH
+	;;
+esac
+
+
+# system-dependent error checking
+case "`uname -s`" in
+	Linux)
+		p0="/usr/lib/libGL.so.1"
+		p1="/usr/X11R6/lib/libGL.so.1"
+		if [ -f "$p0" -a -f "$p1" ]
+		then
+			ls0=`ls -Ll "$p0" | sed 's,/.*,,'`
+			ls1=`ls -Ll "$p1" | sed 's,/.*,,'`
+			if [ "$ls0" != "$ls1" ]
+			then
+				echo "OpenGL misconfiguration detected."
+				echo "Please reinstall graphics driver."
+				#exit 1
+			fi
+		fi
+		;;
+	Darwin*)
+		;;
+esac
+ 
+# get the flags we want to pass to python
+pyflags=""
+for i in "$@"
+do
+	case $i in
+	--opt)
+		pyflags="$pyflags${pyflags:+ }-OO"
+		# remove '--opt' from list of args
+		shift
+		;;
+	esac
+done
+
+# deduce which python to use
+if test -x "$ADS_ROOT/bin/python2.7"
+then
+	# using our distributed version of python, don't use any python
+	# environment variables, especialy PYTHONHOME and PYTHONPATH
+	unset PYTHONHOME
+	PYTHONHOME="$ADS_ROOT"
+	export PYTHONHOME
+	PYTHONPATH="$ADS_ROOT/CCSBpckgs"
+	export PYTHONPATH
+	python="$ADS_ROOT/bin/python"
+else
+	PATH="$originalpath"
+	python="python"
+fi
+if test $# -gt 0
+then
+	exec $python $pyflags $ADS_ROOT/CCSBpckgs/AutoDockTools/Utilities24/prepare_receptor4.py $@
+else
+	exec $python $pyflags $ADS_ROOT/CCSBpckgs/AutoDockTools/Utilities24/prepare_receptor4.py
+fi

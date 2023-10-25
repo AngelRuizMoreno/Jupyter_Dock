@@ -1,0 +1,18 @@
+Receptor
+1X1R_clean_H.pdb
+
+RMSD
+1.0
+
+Binding pocket
+-6.363000005483627 13.203999996185303
+0.7639999389648438 19.067999839782715
+-0.3299999237060547 22.875999450683594
+
+Number of binding poses
+10
+
+Ligands list
+ligand.list
+
+END

@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : -0.0326
+HEADER 1  - Drug Score                        : 0.0873
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.9421
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5340
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 1.3333
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 201.4157
+HEADER 10  -Pocket volume (convex hull)       : 3.1952
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 20.0000
+HEADER 13 - Number of apolar alpha sphere     :    21
+HEADER 14 - Proportion of apolar alpha sphere : 0.8400
+ATOM   3532   CB LYS A 245     -37.876  12.624  10.084  0.00  0.00           C 0
+ATOM   3530   CA LYS A 245     -38.662  11.705  11.002  0.00  0.00           C 0
+ATOM   3097   CG GLN A 218     -36.719  16.313  12.465  0.00  0.00           C 0
+ATOM   3101  OE1 GLN A 218     -38.167  18.157  12.791  0.93  5.36           O 0
+ATOM    107   CG LYS A  17     -42.300  18.203  13.794  0.00  0.00           C 0
+ATOM   3527    O THR A 244     -39.483  10.042  13.133  0.23  3.21           O 0
+ATOM    149  CD1 LEU A  20     -41.644  15.020  17.487  0.00  0.00           C 0
+ATOM   3100   CD GLN A 218     -37.507  17.277  13.317  0.00  0.00           C 0
+ATOM    104   CB LYS A  17     -41.297  18.311  14.926  0.00  0.00           C 0
+ATOM   3102  NE2 GLN A 218     -37.458  17.114  14.637  0.68  3.28           N 0
+ATOM   3526    C THR A 244     -38.474  10.787  13.256  0.00  0.00           C 0
+ATOM   3513    O PRO A 243     -38.274  11.932  17.069  0.70  4.29           O 0
+ATOM   3506   CB PRO A 243     -41.136  10.700  17.422  0.00  0.00           C 0
+ATOM   3512    C PRO A 243     -38.739  10.851  16.753  0.00  0.00           C 0
+ATOM   3538   CD LYS A 245     -38.433  14.179   8.231  0.00  0.00           C 0
+ATOM   3535   CG LYS A 245     -38.576  12.837   8.749  0.00  0.00           C 0
+ATOM   3528    N LYS A 245     -37.965  11.540  12.294  0.55  1.09           N 0
+TER
+END
