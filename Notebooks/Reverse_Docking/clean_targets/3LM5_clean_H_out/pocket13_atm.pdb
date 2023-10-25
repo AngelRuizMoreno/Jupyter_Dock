@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 0.0235
+HEADER 1  - Drug Score                        : 0.0005
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.7448
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4503
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 13.8571
+HEADER 7  - Polarity Score                    :     6
+HEADER 8  - Amino Acid based volume Score     : 3.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 185.7439
+HEADER 10  -Pocket volume (convex hull)       : 12.2007
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 7.0000
+HEADER 13 - Number of apolar alpha sphere     :     8
+HEADER 14 - Proportion of apolar alpha sphere : 0.4211
+ATOM   4038   CB THR A 283      30.052  26.265  13.232  0.00  0.00           C 0
+ATOM   4069  OE1 GLU A 285      33.271  24.535  18.238  0.63  6.43           O 0
+ATOM   2127  OE1 GLN A 151      35.682  21.681  15.057  0.52  6.43           O 0
+ATOM   4042  CG2 THR A 283      31.027  27.251  12.560  0.00  0.00           C 0
+ATOM   4062   CB GLU A 285      30.600  24.138  17.285  0.00  0.00           C 0
+ATOM   2046  CD1 TYR A 147      31.669  20.377  16.217  0.00  0.00           C 0
+ATOM   4058    N GLU A 285      28.944  23.306  15.655  0.82  1.09           N 0
+ATOM   4048    N ALA A 284      28.333  23.834  12.999  0.00  0.00           N 0
+ATOM   4052   CB ALA A 284      28.275  21.375  13.206  0.00  0.00           C 0
+ATOM   4040  OG1 THR A 283      29.759  26.740  14.541  0.65  2.14           O 0
+ATOM   2103   CB HSE A 150      32.868  20.233  10.086  0.00  0.00           C 0
+ATOM   2040   CA TYR A 147      30.514  18.411  13.737  0.00  0.00           C 0
+ATOM   2114    C HSE A 150      35.140  19.277  10.629  0.00  0.00           C 0
+ATOM   2115    O HSE A 150      36.121  19.799  10.114  0.00  0.00           O 0
+ATOM   2106  ND1 HSE A 150      30.662  21.175   9.254  0.47  3.28           N 0
+ATOM   2982  OG1 THR A 214      32.110  24.809   7.339  0.65  6.43           O 0
+ATOM   4036   CA THR A 283      28.736  26.150  12.458  0.00  0.00           C 0
+TER
+END

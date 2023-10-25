@@ -1,0 +1,34 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : -0.0312
+HEADER 1  - Drug Score                        : 0.0007
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 4.1800
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5938
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 38.1667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.6667
+HEADER 9  - Pocket volume (Monte Carlo)       : 168.2906
+HEADER 10  -Pocket volume (convex hull)       : 1.2147
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 5.0000
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.4000
+ATOM   3838    O THR A 263     -21.977  -1.898  27.189  0.64  2.14           O 0
+ATOM   3912   CE LYS A 267     -21.549  -3.113  30.793  0.00  0.00           C 0
+ATOM   3982    O LEU A 271     -16.364  -3.371  25.461  0.68  4.29           O 0
+ATOM   4011  CD1 ILE A 273     -18.406   2.173  26.432  0.00  0.00           C 0
+ATOM   3829   CB THR A 263     -22.285   1.145  28.420  0.00  0.00           C 0
+ATOM   3906   CG LYS A 267     -20.594  -4.924  29.300  0.00  0.00           C 0
+ATOM   3899    N LYS A 267     -20.582  -4.228  25.959  0.69  1.09           N 0
+ATOM   3998    N ILE A 273     -14.579   0.084  26.441  0.00  0.00           N 0
+ATOM   3985   CA GLU A 272     -14.041  -2.259  26.411  0.00  0.00           C 0
+ATOM   3886   CB MET A 266     -19.324  -1.736  24.419  0.00  0.00           C 0
+ATOM   4008  CG1 ILE A 273     -17.134   1.613  25.880  0.00  0.00           C 0
+ATOM   4002   CB ILE A 273     -15.860   2.215  26.484  0.00  0.00           C 0
+TER
+END
