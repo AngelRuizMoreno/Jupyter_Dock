@@ -8,7 +8,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
 VERSION = 'v0.3.0'
-DESCRIPTION = 'MicrobeRX is A tool for enzymatic reaction-based metabolite prediction in the gut microbiome.'
+DESCRIPTION = 'Molecular Docking library for Python'
 #LONG_DESCRIPTION = ''
 
 # Setting up
