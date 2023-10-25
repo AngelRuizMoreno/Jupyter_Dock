@@ -1,20 +1,21 @@
 from setuptools import setup, find_packages
 import codecs
 import os
+import versioneer
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = 'v0.3.0'
 DESCRIPTION = 'Molecular Docking library for Python'
 #LONG_DESCRIPTION = ''
 
 # Setting up
 setup(
     name="JupyterDock",
-    version=VERSION,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     author="Angel J. Ruiz-Moreno",
     author_email="<angel.j.ruiz.moreno@gmail.com>",
     description=DESCRIPTION,

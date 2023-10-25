@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+include requirements.txt
+graft is_number
+recursive-exclude * *.py[co]
+include versioneer.py
+include JupyterDock/_version.py
