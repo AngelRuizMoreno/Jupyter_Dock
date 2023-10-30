@@ -1,19 +1,22 @@
 from pymol import cmd
 from openbabel import pybel
 
-import os, subprocess
+from rdkit import Chem
+
+import os, shutil, subprocess
+
+from .DockingHelpers import dok_to_sdf
 
 from importlib_resources import files
 SMINA = files("JupyterDock.bin").joinpath("smina")
 LEDOCK = files("JupyterDock.bin").joinpath("ledock_linux_x86")
 
 class Docker():
-    def __init__(self,receptor_file:str,ligands_file:str,selection:str,extending:float=5.0, out_format:str='sdf'):
+    def __init__(self,receptor_file:str,ligands_file:str,selection:str,extending:float=5.0):
         self.receptor_file =receptor_file
         self.ligands_file = ligands_file
         self.selection = selection
         self.extending = extending
-        self.out_format=out_format
         
         self.docking_box={}
 
@@ -46,7 +49,7 @@ class Docker():
         
         self.smina_params={'-r' : self.receptor_file,
                            '-l' : self.ligands_file,
-                           '-o': f"{self.ligands_file.split('.')[0]}_smina_results.{self.out_format}"}
+                           '-o': f"{self.ligands_file.split('.')[0]}_smina_results.sdf"}
         
         self.smina_params.update(self.docking_box['smina'])
         
@@ -58,12 +61,12 @@ class Docker():
                 cmd.append(str(k)) 
                 cmd.append(str(v))
 
-        result = subprocess.run([SMINA]+cmd, capture_output=True-verbose, text=True)
-        
+        self.result = subprocess.run([SMINA]+cmd, capture_output=True-verbose, text=True)
+                
     def run_ledock(self,rmsd:float=1.0, num_modes:int=20):
         self.ledock_params={'Receptor' : self.receptor_file,
                             'Ligands' : self.ligands_file,
-                            'Results': f"{self.ligands_file.split('.')[0]}_ledock_results.{self.out_format}",
+                            'Results': f"{self.ligands_file.split('.')[0]}_ledock_results.sdf",
                             'RMSD' : str(rmsd),
                             'num_modes' : str(num_modes),
                            }
@@ -124,34 +127,9 @@ END'''
         
         result = subprocess.run([LEDOCK, os.path.join(tmp_dir,'dock.in')], capture_output=True, text=True)
         
-        out_results=pybel.Outputfile(filename=f"{self.ligands_file.split('.')[0]}_ledock_results.{self.out_format}",format=self.out_format,overwrite=True)
         
         for dok_file in os.listdir(tmp_dir):
             if 'dok' in dok_file:
-                
-                with open(os.path.join(tmp_dir,dok_file), 'r') as f:
-                    doc=[line for line in f.readlines()]
-
-                doc=[line.replace(line.split()[2],line.split()[2].upper()) if 'ATOM' in line else line for line in doc]
-
-                start=[index for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
-                finish=[index-1 for (index,p) in enumerate(doc) if 'REMARK Cluster' in p]
-                finish.append(len(doc))
-
-                interval=list(zip(start,finish[1:]))
-                
-                for num,i in enumerate(interval):
-                    block = ",".join(doc[i[0]:i[1]]).replace(',','')
-                    
-
-                    m=pybel.readstring(format='pdb',string=block)
-
-                    m.title = dok_file.split('/')[-1].split('.')[0]
-                    m.data.update({'Pose':m.data['REMARK'].split()[4]})
-                    m.data.update({'Score':m.data['REMARK'].split()[6]})
-
-                    del m.data['REMARK']
-
-                    out_results.write(m)
+                dok_to_sdf(os.path.join(tmp_dir,dok_file),f"{self.ligands_file.split('.')[0]}_ledock_{dok_file.replace('dok','sdf')}")
         
-        out_results.close()
+        shutil.rmtree(tmp_dir)
